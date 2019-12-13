@@ -10,7 +10,7 @@ package:
 source:
   git_url: https://github.com/UCL/STIR.git
   git_rev: {{ git_tag }}
-  git_depth: 1 # (Defaults to -1/not shallow)
+  git_depth: 1000 # (Defaults to -1/not shallow), has to be large enough such that the tag is actually in the last xxx commits
 
 build:
   skip: true  # [py2k]
