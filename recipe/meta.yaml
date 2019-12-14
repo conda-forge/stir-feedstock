@@ -1,6 +1,6 @@
 
 {% set name = "STIR" %}
-{% set version = "4.0.0.alpha" %}
+{% set version = "4.0.0a0" %}
 {% set git_tag = "stir_rel_4_00_alpha" %}
 
 package:
