@@ -10,6 +10,7 @@ cmake -G "%CMAKE_GENERATOR%" ^
       -D BUILD_SWIG_PYTHON:BOOL=ON ^
       -D PYTHON_LIBRARY=%PYTHON_LIBRARY% ^
       -D CMAKE_BUILD_TYPE=Release ^
+      -D GRAPHICS=None ^
       %SRC_DIR%
 if errorlevel 1 exit 1
 
