@@ -3,8 +3,12 @@ cd build
 
 set PYTHON_LIBRARY=%PREFIX%\libs\python%PY_VER:~0,1%%PY_VER:~2,1%.lib
 
+echo Start Windows build with
+echo CMAKE_GENERATOR "%CMAKE_GENERATOR%"
+echo LIBRARY_PREFIX %LIBRARY_PREFIX%
+echo PYTHON_LIBRARY %PYTHON_LIBRARY%
 :: Configure.
-cmake -G "%CMAKE_GENERATOR%" ^
+cmake -G "Ninja"
       -D CMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
       -D PYTHON_DEST=%SP_DIR% ^
       -D BUILD_SWIG_PYTHON:BOOL=ON ^
