@@ -46,10 +46,6 @@ test:
   commands:
     - conda inspect linkages -p $PREFIX {{ name|lower }}  # [not win]
     - conda inspect objects -p $PREFIX {{ name|lower }}   # [osx]
-    - pwd
-    - cd build
-    - ctest -C Release --output-on-failure
-    - cd ..
     - cd recon_test_pack && ./run_tests.sh --nointbp  # [not win]
     - cd recon_test_pack  # [win]
     - run_tests  # [win]
