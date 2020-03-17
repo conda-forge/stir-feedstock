@@ -16,7 +16,7 @@ source:
 build:
   skip: true  # [py2k]
   skip: true  # [win and py<36]
-  skip: true  # [win]
+  skip: true  # [win and vc<14]
   skip: true  # [osx]
   number: 1
 
@@ -25,6 +25,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake
+    - ninja
   host:
     - python
     - boost-cpp
@@ -45,10 +46,11 @@ test:
   commands:
     - conda inspect linkages -p $PREFIX {{ name|lower }}  # [not win]
     - conda inspect objects -p $PREFIX {{ name|lower }}   # [osx]
-    - pytest src/swig/test/python
     - cd recon_test_pack && ./run_tests.sh --nointbp  # [not win]
     - cd recon_test_pack  # [win]
     - run_tests  # [win]
+    - cd ..
+    - pytest src/swig/test/python
 
 
 about:
