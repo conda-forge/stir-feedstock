@@ -3,10 +3,7 @@ cd build
 
 set PYTHON_LIBRARY=%PREFIX%\libs\python%PY_VER:~0,1%%PY_VER:~2,1%.lib
 
-echo Start Windows build with
-echo SRC_DIR %SRC_DIR%
-echo LIBRARY_PREFIX %LIBRARY_PREFIX%
-echo PYTHON_LIBRARY %PYTHON_LIBRARY%
+echo Start Windows build
 :: Configure.
 cmake -G "Ninja" ^
       -D CMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
