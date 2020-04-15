@@ -18,7 +18,7 @@ build:
   skip: true  # [win and py<36]
   skip: true  # [win and vc<14]
   skip: true  # [osx]
-  number: 2
+  number: 3
 
 requirements:
   build:
@@ -32,10 +32,12 @@ requirements:
     - numpy
     - swig
     - libitk-devel
+    - openmp
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - libitk
+    - openmp
 
 test:
   requires:
