@@ -32,12 +32,12 @@ requirements:
     - numpy
     - swig
     - libitk-devel
-    - openmp # [osx]
+    - openmp  # [osx]
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - libitk
-    - openmp # [osx]
+    - openmp  # [osx]
 
 test:
   requires:
