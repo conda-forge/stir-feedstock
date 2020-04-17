@@ -1,12 +1,16 @@
 mkdir build && cd build
 debugbuild=true
 
-if $debugbuild; then
+#if $debugbuild; then
+echo HIER
     which python
     find $PREFIX -name Python.h
     find $PREFIX -name libpython\*
-fi
 
+    find /home/conda/feedstock_root/build_artifacts/  -name Python.h
+    find /home/conda/feedstock_root/build_artifacts/  -name libpy\*
+#fi
+exit 1
 cmake -D CMAKE_FIND_DEBUG_MODE=$debugbuild \
       -D CMAKE_INSTALL_PREFIX=$PREFIX \
       -D CMAKE_PREFIX_PATH=$PREFIX \
