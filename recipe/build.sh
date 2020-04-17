@@ -1,5 +1,14 @@
 mkdir build && cd build
-cmake -D CMAKE_INSTALL_PREFIX=$PREFIX \
+debugbuild=true
+
+if $debugbuild; then
+    which python
+    find $PREFIX -name Python.h
+    find $PREFIX -name libpython\*
+fi
+
+cmake -D CMAKE_FIND_DEBUG_MODE=$debugbuild \
+      -D CMAKE_INSTALL_PREFIX=$PREFIX \
       -D CMAKE_PREFIX_PATH=$PREFIX \
       -D PYTHON_DEST=$SP_DIR \
       -D BUILD_SWIG_PYTHON:BOOL=ON \
