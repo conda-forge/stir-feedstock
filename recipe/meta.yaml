@@ -55,6 +55,10 @@ test:
     - conda inspect objects -p $PREFIX {{ name|lower }}   # [osx]
     - cd recon_test_pack
     - ./run_tests.sh --nointbp  # [not win]
+    - ./run_test_zoom_image.sh  # [not win]
+    - ./run_test_simulate_and_recon.sh  # [not win]
+    - ./run_test_simulate_and_recon_with_motion.sh  # [not win]
+    - ./run_test_listmode_recon.sh  # [not win]
     - ./run_root_GATE.sh  # [not win]
     - run_tests  # [win]
     - cd ..
