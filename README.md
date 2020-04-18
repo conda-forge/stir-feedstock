@@ -12,6 +12,9 @@ Summary: Software for Tomographic Image Reconstruction
 STIR is Open Source software for use in tomographic imaging.
 Its aim is to provide a Multi-Platform Object-Oriented framework for all data manipulations in tomographic imaging.
 
+This package contains all STIR utilities and Python support. It is built with ITK on all platforms
+and ROOT on Linux. (root_base for Windows is currently not available on conda-forge).
+
 
 Current build status
 ====================

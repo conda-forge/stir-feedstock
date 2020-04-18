@@ -24,3 +24,5 @@ pin_run_as_build:
     max_pin: x.x
 python:
 - 3.6.* *_cpython
+root_base:
+- 6.20.2
