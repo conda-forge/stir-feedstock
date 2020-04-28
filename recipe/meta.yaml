@@ -1,8 +1,8 @@
 
 {% set name = "STIR" %}
-{% set version = "4.0.0" %}
-{% set sha256 = "3e20b9caf117fedf9d4e18da2271d4bba4da3fe0acbd2a22f9422edc14251e1c" %}
-{% set treehash = "rel_4.0.0" %}
+{% set version = "4.0.1" %}
+{% set sha256 = "17e6cfa03a879e6f0adf6cd968e45c423cb997412b19979117f139c1cf14fbbc" %}
+{% set treehash = "rel_4.0.1" %}
 
 package:
   name: {{ name|lower }}
