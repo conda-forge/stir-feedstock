@@ -1,8 +1,8 @@
 
 {% set name = "STIR" %}
-{% set version = "4.0.0a0" %}
-{% set sha256 = "0dd7d44b401ecca12298dbf180fb94fc59dcb93315bdb2a8a1141708f7188c1a" %}
-{% set treehash = "stir_rel_4_00_alpha" %}
+{% set version = "4.0.1" %}
+{% set sha256 = "17e6cfa03a879e6f0adf6cd968e45c423cb997412b19979117f139c1cf14fbbc" %}
+{% set treehash = "rel_4.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -12,13 +12,15 @@ source:
   fn: {{ name }}-{{ treehash }}.tar.gz
   url: https://github.com/UCL/{{ name }}/archive/{{ treehash }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - 0001-skip-KOSMAPOSL-test-for-conda.patch
 
 build:
   skip: true  # [py2k]
   skip: true  # [win and py<36]
   skip: true  # [win and vc<14]
   skip: true  # [osx]
-  number: 4
+  number: 0
 
 requirements:
   build:
@@ -50,9 +52,17 @@ test:
   commands:
     - conda inspect linkages -p $PREFIX {{ name|lower }}  # [not win]
     - conda inspect objects -p $PREFIX {{ name|lower }}   # [osx]
-    - cd recon_test_pack && ./run_tests.sh --nointbp  # [not win]
-    - cd recon_test_pack  # [win]
+    - cd recon_test_pack
+    - ./run_test_simulate_and_recon.sh  # [not win]
+    - ./run_test_listmode_recon.sh  # [not win]
+    - ./run_test_simulate_and_recon_with_motion.sh  # [not win]
+    - ./run_scatter_tests.sh  # [not win]
+    - ./run_tests.sh --nointbp  # [not win]
+    - ./run_test_zoom_image.sh  # [not win]
     - run_tests  # [win]
+    - cd SPECT
+    - ./run_SPECT_tests.sh  # [not win]
+    - cd ..
     - cd ..
     - pytest src/swig/test/python
 
