@@ -19,8 +19,7 @@ build:
   skip: true  # [py2k]
   skip: true  # [win and py<36]
   skip: true  # [win and vc<14]
-  skip: true  # [osx]
-  number: 0
+  number: 1
 
 requirements:
   build:
