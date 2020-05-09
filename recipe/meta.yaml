@@ -12,6 +12,8 @@ source:
   fn: {{ name }}-{{ treehash }}.tar.gz
   url: https://github.com/UCL/{{ name }}/archive/{{ treehash }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - 0001-skip-KOSMAPOSL-test-for-conda.patch
 
 build:
   skip: true  # [py2k]
