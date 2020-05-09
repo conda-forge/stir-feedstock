@@ -52,9 +52,17 @@ test:
   commands:
     - conda inspect linkages -p $PREFIX {{ name|lower }}  # [not win]
     - conda inspect objects -p $PREFIX {{ name|lower }}   # [osx]
-    - cd recon_test_pack && ./run_tests.sh --nointbp  # [not win]
-    - cd recon_test_pack  # [win]
+    - cd recon_test_pack
+    - ./run_test_simulate_and_recon.sh  # [not win]
+    - ./run_test_listmode_recon.sh  # [not win]
+    - ./run_test_simulate_and_recon_with_motion.sh  # [not win]
+    - ./run_scatter_tests.sh  # [not win]
+    - ./run_tests.sh --nointbp  # [not win]
+    - ./run_test_zoom_image.sh  # [not win]
     - run_tests  # [win]
+    - cd SPECT
+    - ./run_SPECT_tests.sh  # [not win]
+    - cd ..
     - cd ..
     - pytest src/swig/test/python
 
