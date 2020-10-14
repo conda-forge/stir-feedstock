@@ -5,9 +5,13 @@ Home: http://stir.sourceforge.net/
 
 Package license: GPL and LGPL
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stir-feedstock/blob/master/LICENSE.txt)
 
 Summary: Software for Tomographic Image Reconstruction
+
+Development: https://github.com/UCL/STIR
+
+Documentation: http://stir.sourceforge.net/documentation
 
 STIR is Open Source software for use in tomographic imaging.
 Its aim is to provide a Multi-Platform Object-Oriented framework for all data manipulations in tomographic imaging.
@@ -31,87 +35,115 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_boost_cpp1.72.0python3.6.____cpython</td>
+              <td>linux_64_boost_cpp1.72.0numpy1.16python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost_cpp1.72.0python3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost_cpp1.72.0numpy1.16python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_boost_cpp1.72.0python3.7.____cpython</td>
+              <td>linux_64_boost_cpp1.72.0numpy1.16python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost_cpp1.72.0python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost_cpp1.72.0numpy1.16python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_boost_cpp1.72.0python3.8.____cpython</td>
+              <td>linux_64_boost_cpp1.72.0numpy1.16python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost_cpp1.72.0python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost_cpp1.72.0numpy1.16python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_boost_cpp1.74.0python3.6.____cpython</td>
+              <td>linux_64_boost_cpp1.72.0numpy1.19python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost_cpp1.74.0python3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost_cpp1.72.0numpy1.19python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_boost_cpp1.74.0python3.7.____cpython</td>
+              <td>linux_64_boost_cpp1.74.0numpy1.16python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost_cpp1.74.0python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost_cpp1.74.0numpy1.16python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_boost_cpp1.74.0python3.8.____cpython</td>
+              <td>linux_64_boost_cpp1.74.0numpy1.16python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost_cpp1.74.0python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost_cpp1.74.0numpy1.16python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost_cpp1.72.0python3.6.____cpython</td>
+              <td>linux_64_boost_cpp1.74.0numpy1.16python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=win&configuration=win_64_boost_cpp1.72.0python3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost_cpp1.74.0numpy1.16python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost_cpp1.72.0python3.7.____cpython</td>
+              <td>linux_64_boost_cpp1.74.0numpy1.19python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=win&configuration=win_64_boost_cpp1.72.0python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=linux&configuration=linux_64_boost_cpp1.74.0numpy1.19python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost_cpp1.72.0python3.8.____cpython</td>
+              <td>win_64_boost_cpp1.72.0numpy1.16python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=win&configuration=win_64_boost_cpp1.72.0python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=win&configuration=win_64_boost_cpp1.72.0numpy1.16python3.6.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost_cpp1.74.0python3.6.____cpython</td>
+              <td>win_64_boost_cpp1.72.0numpy1.16python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=win&configuration=win_64_boost_cpp1.74.0python3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=win&configuration=win_64_boost_cpp1.72.0numpy1.16python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost_cpp1.74.0python3.7.____cpython</td>
+              <td>win_64_boost_cpp1.72.0numpy1.16python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=win&configuration=win_64_boost_cpp1.74.0python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=win&configuration=win_64_boost_cpp1.72.0numpy1.16python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_boost_cpp1.74.0python3.8.____cpython</td>
+              <td>win_64_boost_cpp1.72.0numpy1.19python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=win&configuration=win_64_boost_cpp1.74.0python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=win&configuration=win_64_boost_cpp1.72.0numpy1.19python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_boost_cpp1.74.0numpy1.16python3.6.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=win&configuration=win_64_boost_cpp1.74.0numpy1.16python3.6.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_boost_cpp1.74.0numpy1.16python3.7.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=win&configuration=win_64_boost_cpp1.74.0numpy1.16python3.7.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_boost_cpp1.74.0numpy1.16python3.8.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=win&configuration=win_64_boost_cpp1.74.0numpy1.16python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_boost_cpp1.74.0numpy1.19python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=master&jobName=win&configuration=win_64_boost_cpp1.74.0numpy1.19python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
