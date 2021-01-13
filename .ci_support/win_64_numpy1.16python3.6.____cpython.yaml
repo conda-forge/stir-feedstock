@@ -1,5 +1,5 @@
 boost_cpp:
-- 1.72.0
+- 1.74.0
 c_compiler:
 - vs2017
 channel_sources:
@@ -23,5 +23,5 @@ target_platform:
 vc:
 - '14'
 zip_keys:
-- - numpy
-  - python
+- - python
+  - numpy
