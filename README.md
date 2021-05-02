@@ -3,7 +3,7 @@ About stir
 
 Home: http://stir.sourceforge.net/
 
-Package license: GPL and LGPL
+Package license: Apache-2.0 AND License-ref-PARAPET-license
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stir-feedstock/blob/master/LICENSE.txt)
 
