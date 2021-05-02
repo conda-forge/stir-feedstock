@@ -48,6 +48,7 @@ test:
     - stir
   source_files:
     - recon_test_pack
+    - examples
     - src/swig/test/python
   commands:
     - conda inspect linkages -p $PREFIX {{ name|lower }}  # [not win]
@@ -69,8 +70,7 @@ test:
 
 about:
   home: http://stir.sourceforge.net/
-  license: GPL and LGPL
-  license_family: GPL
+  license: Apache-2.0 AND License-ref-PARAPET-license
   license_file: LICENSE.txt
   summary: 'Software for Tomographic Image Reconstruction'
   description: |
@@ -81,7 +81,7 @@ about:
 
 extra:
   recipe-maintainers:
-    - olivierverdier
     - KrisThielemans
+    - olivierverdier
     - paskino
     - casperdcl
