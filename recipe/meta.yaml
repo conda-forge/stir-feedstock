@@ -1,8 +1,8 @@
 
 {% set name = "STIR" %}
-{% set version = "4.0.2" %}
-{% set sha256 = "e2e80415127fd4af24b012bfd38d4b81e6f9709b3efa367a12b5c14e640e1c98" %}
-{% set treehash = "rel_4.0.2" %}
+{% set version = "4.1.0" %}
+{% set sha256 = "30829c74ecd232c6bc46f89c060efeaff82a65d672d2c63444d7c29550e85f9e" %}
+{% set treehash = "rel_4.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -48,6 +48,7 @@ test:
     - stir
   source_files:
     - recon_test_pack
+    - examples
     - src/swig/test/python
   commands:
     - conda inspect linkages -p $PREFIX {{ name|lower }}  # [not win]
@@ -69,8 +70,7 @@ test:
 
 about:
   home: http://stir.sourceforge.net/
-  license: GPL and LGPL
-  license_family: GPL
+  license: Apache-2.0 AND License-ref-PARAPET-license
   license_file: LICENSE.txt
   summary: 'Software for Tomographic Image Reconstruction'
   description: |
@@ -81,7 +81,7 @@ about:
 
 extra:
   recipe-maintainers:
-    - olivierverdier
     - KrisThielemans
+    - olivierverdier
     - paskino
     - casperdcl
