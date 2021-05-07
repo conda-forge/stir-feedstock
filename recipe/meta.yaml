@@ -32,13 +32,15 @@ requirements:
     - boost-cpp
     - numpy
     - swig
+    - hdf5
     - libitk-devel
-    - openmp  # [osx]
+    - llvm-openmp  # [osx]
   run:
     - python
     - {{ pin_compatible('numpy') }}
+    - hdf5
     - libitk
-    - openmp  # [osx]
+    - llvm-openmp  # [osx]
 
 test:
   requires:
