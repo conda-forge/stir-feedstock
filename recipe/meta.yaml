@@ -34,7 +34,7 @@ requirements:
     - numpy
     - swig
     - libitk-devel
-    - libitk
+    - libitk =5.1
     - openmp  # [osx]
   run:
     - python
