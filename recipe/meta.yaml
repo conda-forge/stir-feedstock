@@ -20,7 +20,7 @@ build:
   skip: true  # [win and py<36]
   skip: true  # [win and vc<14]
   skip: true  # [osx]
-  number: 3
+  number: 4
 
 requirements:
   build:
@@ -52,8 +52,6 @@ test:
     - examples
     - src/swig/test/python
   commands:
-    - conda inspect linkages -p $PREFIX {{ name|lower }}  # [not win]
-    - conda inspect objects -p $PREFIX {{ name|lower }}   # [osx]
     - cd recon_test_pack
     - ./run_test_simulate_and_recon.sh  # [not win]
     - ./run_test_listmode_recon.sh  # [not win]
