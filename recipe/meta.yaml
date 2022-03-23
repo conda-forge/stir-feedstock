@@ -76,6 +76,9 @@ about:
   description: |
     STIR is Open Source software for use in tomographic imaging.
     Its aim is to provide a Multi-Platform Object-Oriented framework for all data manipulations in tomographic imaging.
+    Check the recipe at https://github.com/conda-forge/stir-feedstock/blob/main/recipe/meta.yaml
+    to see which dependencies are included in this conda package.
+    
   doc_url: http://stir.sourceforge.net/documentation
   dev_url: https://github.com/UCL/STIR
 
