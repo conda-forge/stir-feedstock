@@ -35,12 +35,14 @@ requirements:
     - hdf5  # [linux]
     - nlohmann_json
     - openmp  # [osx]
+    - libgomp  # [linux]
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - {{ pin_compatible('libitk', min_pin='x.x', max_pin='x.x') }}
     - hdf5  # [linux]
     - openmp  # [osx]
+    - libgomp  # [linux]
 
 test:
   requires:
