@@ -6,13 +6,14 @@ case $OS in
   *) ;;
 esac
 
+python_exec=`which python`
 mkdir build && cd build
 cmake -G "Ninja" \
       -D CMAKE_INSTALL_PREFIX=$PREFIX \
       -D CMAKE_PREFIX_PATH=$PREFIX \
       -D PYTHON_DEST=$SP_DIR \
       -D BUILD_SWIG_PYTHON:BOOL=ON \
-      -D Python_EXECUTABLE=${which python} \
+      -D Python_EXECUTABLE=${python_exec} \
       -D CMAKE_BUILD_TYPE=Release \
       -D STIR_OPENMP=ON \
       -D GRAPHICS=None \
