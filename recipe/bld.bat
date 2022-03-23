@@ -5,6 +5,7 @@ echo Start Windows build
 :: Configure.
 cmake -G "Ninja" ^
       -D CMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
+      -D DISABLE_HDF5:BOOL=ON ^
       -D PYTHON_DEST=%SP_DIR% ^
       -D BUILD_SWIG_PYTHON:BOOL=ON ^
       -D Python_EXECUTABLE=%PYTHON% ^

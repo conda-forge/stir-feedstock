@@ -1,3 +1,11 @@
+OS=`uname`
+case $OS in
+  'Darwin')
+    EXTRA_OPTS="-DDISABLE_HDF5:BOOL=ON"
+    ;;
+  *) ;;
+esac
+
 mkdir build && cd build
 cmake -G "Ninja" \
       -D CMAKE_INSTALL_PREFIX=$PREFIX \
@@ -8,7 +16,7 @@ cmake -G "Ninja" \
       -D CMAKE_BUILD_TYPE=Release \
       -D STIR_OPENMP=ON \
       -D GRAPHICS=None \
-      $SRC_DIR
+      $EXTRA_OPT $SRC_DIR
 
 # Build.
 cmake --build . --config Release
