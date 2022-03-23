@@ -33,6 +33,7 @@ requirements:
     - libitk-devel
     - libitk
     - hdf5
+    - nlohmann_json
     - openmp  # [osx]
   run:
     - python
