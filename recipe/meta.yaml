@@ -69,7 +69,7 @@ test:
 
 about:
   home: http://stir.sourceforge.net/
-  license: Apache-2.0 AND License-ref-PARAPET-license
+  license: Apache-2.0 AND LicenseRef-PARAPET-license
   license_file: LICENSE.txt
   summary: 'Software for Tomographic Image Reconstruction'
   description: |
