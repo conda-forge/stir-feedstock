@@ -1,8 +1,8 @@
 
 {% set name = "STIR" %}
-{% set version = "4.1.1" %}
-{% set sha256 = "32cb9494256f6ca50a95a7572a0420601651b7c3d4cd64ce4d6f7fbbb1ae24f8" %}
-{% set treehash = "rel_4.1.1" %}
+{% set version = "5.0.0" %}
+{% set sha256 = "f63f52266532bdc01d5e4749b724c8ae97cee03dde9450cb2ac5b75eedff1dce" %}
+{% set treehash = "rel_5.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -12,15 +12,12 @@ source:
   fn: {{ name }}-{{ treehash }}.tar.gz
   url: https://github.com/UCL/{{ name }}/archive/{{ treehash }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - 0001-skip-KOSMAPOSL-test-for-conda.patch
 
 build:
-  skip: true  # [py2k]
   skip: true  # [win and py<36]
   skip: true  # [win and vc<14]
   skip: true  # [osx]
-  number: 3
+  number: 0
 
 requirements:
   build:
@@ -34,7 +31,8 @@ requirements:
     - numpy
     - swig
     - libitk-devel
-    - libitk <5.2
+    - libitk
+    - hdf5
     - openmp  # [osx]
   run:
     - python
