@@ -32,15 +32,13 @@ requirements:
     - swig
     - libitk-devel
     - libitk <5.2
-    - hdf5  # [linux]
-    - nlohmann_json
+    - nlohmann_json  # [not win]
     - openmp  # [osx]
     - libgomp  # [linux]
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - {{ pin_compatible('libitk', min_pin='x.x', max_pin='x.x') }}
-    - hdf5  # [linux]
     - openmp  # [osx]
     - libgomp  # [linux]
 
