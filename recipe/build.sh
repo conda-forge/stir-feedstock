@@ -20,7 +20,7 @@ cmake -G "Ninja" \
       -D CMAKE_BUILD_TYPE=Release \
       -D STIR_OPENMP=ON \
       -D GRAPHICS=None \
-      $EXTRA_OPT $SRC_DIR
+      $EXTRA_OPTS $SRC_DIR
 
 # Build.
 cmake --build . --config Release
