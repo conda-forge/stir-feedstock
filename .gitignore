@@ -1,7 +1,3 @@
 *.pyc
-build_artifacts
 
-# Common editor backups
-~$*
-*~
-*.bak
+build_artifacts
