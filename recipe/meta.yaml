@@ -1,8 +1,8 @@
 
 {% set name = "STIR" %}
-{% set version = "4.1.1" %}
-{% set sha256 = "32cb9494256f6ca50a95a7572a0420601651b7c3d4cd64ce4d6f7fbbb1ae24f8" %}
-{% set treehash = "rel_4.1.1" %}
+{% set version = "5.0.0" %}
+{% set sha256 = "f63f52266532bdc01d5e4749b724c8ae97cee03dde9450cb2ac5b75eedff1dce" %}
+{% set treehash = "rel_5.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -12,15 +12,11 @@ source:
   fn: {{ name }}-{{ treehash }}.tar.gz
   url: https://github.com/UCL/{{ name }}/archive/{{ treehash }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - 0001-skip-KOSMAPOSL-test-for-conda.patch
 
 build:
-  skip: true  # [py2k]
   skip: true  # [win and py<36]
   skip: true  # [win and vc<14]
-  skip: true  # [osx]
-  number: 3
+  number: 0
 
 requirements:
   build:
@@ -35,12 +31,15 @@ requirements:
     - swig
     - libitk-devel
     - libitk <5.2
+    - nlohmann_json  # [not win]
     - openmp  # [osx]
+    - libgomp  # [linux]
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - {{ pin_compatible('libitk', min_pin='x.x', max_pin='x.x') }}
     - openmp  # [osx]
+    - libgomp  # [linux]
 
 test:
   requires:
@@ -54,6 +53,7 @@ test:
   commands:
     - conda inspect linkages -p $PREFIX {{ name|lower }}  # [not win]
     - conda inspect objects -p $PREFIX {{ name|lower }}   # [osx]
+    - stir_config --config-dir
     - cd recon_test_pack
     - ./run_test_simulate_and_recon.sh  # [not win]
     - ./run_test_listmode_recon.sh  # [not win]
@@ -61,22 +61,24 @@ test:
     - ./run_scatter_tests.sh  # [not win]
     - ./run_tests.sh --nointbp  # [not win]
     - ./run_test_zoom_image.sh  # [not win]
-    - run_tests  # [win]
     - cd SPECT
     - ./run_SPECT_tests.sh  # [not win]
     - cd ..
     - cd ..
-    - pytest src/swig/test/python
+    - pytest src/swig/test/python  # [not win]
 
 
 about:
   home: http://stir.sourceforge.net/
-  license: Apache-2.0 AND License-ref-PARAPET-license
+  license: Apache-2.0 AND LicenseRef-PARAPET-license
   license_file: LICENSE.txt
   summary: 'Software for Tomographic Image Reconstruction'
   description: |
     STIR is Open Source software for use in tomographic imaging.
     Its aim is to provide a Multi-Platform Object-Oriented framework for all data manipulations in tomographic imaging.
+    Check the recipe at https://github.com/conda-forge/stir-feedstock/blob/main/recipe/meta.yaml
+    to see which dependencies are included in this conda package.
+    
   doc_url: http://stir.sourceforge.net/documentation
   dev_url: https://github.com/UCL/STIR
 

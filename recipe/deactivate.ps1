@@ -1,0 +1,3 @@
+$Env:STIR_CONFIG_DIR=""
+
+

@@ -1,0 +1,1 @@
+unsetenv STIR_CONFIG_DIR
