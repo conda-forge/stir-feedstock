@@ -1,0 +1,1 @@
+set -e STIR_CONFIG_DIR
