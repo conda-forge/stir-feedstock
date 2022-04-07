@@ -1,4 +1,3 @@
-*~
-*.Pyc
+*.pyc
 
 build_artifacts
