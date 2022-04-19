@@ -16,7 +16,7 @@ source:
 build:
   skip: true  # [win and py<36]
   skip: true  # [win and vc<14]
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -31,7 +31,7 @@ requirements:
     - swig
     - libitk-devel
     - libitk <5.2
-    - nlohmann_json  # [not win]
+    - nlohmann_json
     - openmp  # [osx]
     - libgomp  # [linux]
   run:
@@ -59,11 +59,12 @@ test:
     - ./run_scatter_tests.sh  # [not win]
     - ./run_tests.sh --nointbp  # [not win]
     - ./run_test_zoom_image.sh  # [not win]
+    - run_tests  # [win]
     - cd SPECT
     - ./run_SPECT_tests.sh  # [not win]
     - cd ..
     - cd ..
-    - pytest src/swig/test/python  # [not win]
+    - pytest src/swig/test/python
 
 
 about:
