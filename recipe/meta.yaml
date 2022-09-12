@@ -16,7 +16,7 @@ source:
 build:
   skip: true  # [win and py<36]
   skip: true  # [win and vc<14]
-  number: 3
+  number: 4
 
 requirements:
   build:
