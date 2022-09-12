@@ -16,7 +16,7 @@ source:
 build:
   skip: true  # [win and py<36]
   skip: true  # [win and vc<14]
-  number: 2
+  number: 3
 
 requirements:
   build:
@@ -34,6 +34,7 @@ requirements:
     - nlohmann_json
     - openmp  # [osx]
     - libgomp  # [linux]
+    - zlib  # [win]
   run:
     - python
     - {{ pin_compatible('numpy') }}
