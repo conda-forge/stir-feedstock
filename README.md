@@ -19,7 +19,7 @@ Check the recipe at https://github.com/conda-forge/stir-feedstock/blob/main/reci
 to see which dependencies are included in this conda package.
 
 This package contains all STIR utilities and Python support. It is built with ITK on all platforms
-and ROOT on Linux. (root_base for Windows is currently not available on conda-forge).
+and ROOT on Linux.
 
 
 Current build status
