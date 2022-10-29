@@ -45,7 +45,7 @@ requirements:
 test:
   requires:
     - pytest
-    - root  # [not win]
+    - root_base  # [linux]
   imports:
     - stir
   source_files:
