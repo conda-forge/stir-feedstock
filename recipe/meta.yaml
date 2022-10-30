@@ -28,7 +28,8 @@ requirements:
     - numpy
     - swig
     - libitk-devel
-    - libitk <5.2
+    - libitk <5.2  # [win]
+    - libitk  # [not win]
     - root_base  # [linux]
     - nlohmann_json
     - openmp  # [osx]
