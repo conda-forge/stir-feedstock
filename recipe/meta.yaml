@@ -14,7 +14,7 @@ source:
 build:
   skip: true  # [win and py<36]
   skip: true  # [win and vc<14]
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -29,6 +29,7 @@ requirements:
     - swig
     - libitk-devel
     - libitk <5.2
+    - root_base  # [linux]
     - nlohmann_json
     - openmp  # [osx]
     - libgomp  # [linux]
@@ -37,12 +38,14 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - {{ pin_compatible('libitk', min_pin='x.x', max_pin='x.x') }}
+    - root_base  # [linux]
     - openmp  # [osx]
     - libgomp  # [linux]
 
 test:
   requires:
     - pytest
+    - root_base  # [linux]
   imports:
     - stir
   source_files:
@@ -58,6 +61,7 @@ test:
     - ./run_scatter_tests.sh  # [not win]
     - ./run_tests.sh --nointbp  # [not win]
     - ./run_test_zoom_image.sh  # [not win]
+    - ./run_root_GATE.sh  # [linux]
     - run_tests  # [win]
     - cd SPECT
     - ./run_SPECT_tests.sh  # [not win]
@@ -76,7 +80,10 @@ about:
     Its aim is to provide a Multi-Platform Object-Oriented framework for all data manipulations in tomographic imaging.
     Check the recipe at https://github.com/conda-forge/stir-feedstock/blob/main/recipe/meta.yaml
     to see which dependencies are included in this conda package.
-    
+
+    This package contains all STIR utilities and Python support. It is built with ITK on all platforms
+    and ROOT on Linux.
+
   doc_url: http://stir.sourceforge.net/documentation
   dev_url: https://github.com/UCL/STIR
 
