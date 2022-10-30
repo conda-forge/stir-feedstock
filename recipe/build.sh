@@ -2,10 +2,10 @@ OS=`uname`
 # disable HDF5 currently on all systems due to conflicts
 case $OS in
   'Darwin')
-    EXTRA_OPTS="-DDISABLE_HDF5:BOOL=ON"
+    EXTRA_OPTS="-DDISABLE_HDF5:BOOL=OFF"
     ;;
   *)
-    EXTRA_OPTS="-DDISABLE_HDF5:BOOL=ON"
+    EXTRA_OPTS="-DDISABLE_HDF5:BOOL=OFF"
     ;;
 esac
 

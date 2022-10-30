@@ -14,7 +14,7 @@ source:
 build:
   skip: true  # [win and py<36]
   skip: true  # [win and vc<14]
-  number: 4
+  number: 5
 
 requirements:
   build:
@@ -27,6 +27,7 @@ requirements:
     - boost-cpp
     - numpy
     - swig
+    - hdf5  # [not win]
     - libitk-devel
     - libitk <5.2  # [win]
     - libitk  # [not win]
@@ -39,6 +40,7 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - {{ pin_compatible('libitk', min_pin='x.x', max_pin='x.x') }}
+    - {{ pin_compatible('hdf5', min_pin='x.x', max_pin='x.x') }}  # [not win]
     - {{ pin_compatible('root_base', min_pin='x.x', max_pin='x.x') }}  # [linux]
     - openmp  # [osx]
     - libgomp  # [linux]
