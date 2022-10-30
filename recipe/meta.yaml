@@ -27,6 +27,7 @@ requirements:
     - boost-cpp
     - numpy
     - swig
+    - hdf5
     - libitk-devel
     - libitk <5.2  # [win]
     - libitk  # [not win]
