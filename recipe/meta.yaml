@@ -29,7 +29,7 @@ requirements:
     - swig
     - libitk-devel
     - libitk <5.2
-    - root_base  # [linux]
+    - root_base  # [not win]
     - nlohmann_json
     - openmp  # [osx]
     - libgomp  # [linux]
@@ -38,14 +38,12 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - {{ pin_compatible('libitk', min_pin='x.x', max_pin='x.x') }}
-    - root_base  # [linux]
     - openmp  # [osx]
     - libgomp  # [linux]
 
 test:
   requires:
     - pytest
-    - root_base  # [linux]
   imports:
     - stir
   source_files:
