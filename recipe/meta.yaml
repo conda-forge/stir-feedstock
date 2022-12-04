@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/UCL/STIR/archive/refs/tags/rel_{{ version }}.tar.gz
-  sha256: 1
+  sha256: 67c434c78606b2823a47c22f1b02844a594aecccf842c2259c0781a19c9ad8de
 
 build:
   number: 6
