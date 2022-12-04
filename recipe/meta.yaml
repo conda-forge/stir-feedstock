@@ -1,15 +1,14 @@
 
 {% set name = "STIR" %}
 {% set version = "5.0.2" %}
-{% set treehash = "rel_" + version %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  git_url: https://github.com/UCL/{{ name }}.git
-  git_rev: {{ treehash }}
+  url: https://github.com/UCL/STIR/releases/download/{{ version }}/STIR-rel_{{ version }}.tar.gz
+  sha256: 1
 
 build:
   number: 6
