@@ -20,6 +20,8 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - llvm-openmp  # [osx]
+    - libgomp      # [linux]
     - cmake
     - ninja
   host:
@@ -32,16 +34,12 @@ requirements:
     - libitk-devel
     - libitk  5.2
     - nlohmann_json
-    # - openmp  # [osx]
 
     - root_base  # [linux]
-    - libgomp  # [linux]
     - zlib  # [win]
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - openmp  # [osx]
-    - libgomp  # [linux]
 
 test:
   requires:
