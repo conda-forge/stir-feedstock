@@ -13,8 +13,6 @@ source:
 
 build:
   number: 6
-  skip: true  # [not osx]
-  skip: true  # [py!=39]
 
 requirements:
   build:
