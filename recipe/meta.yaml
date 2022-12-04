@@ -29,10 +29,10 @@ requirements:
     - swig
     - hdf5  # [not win]
     
-    # - libitk-devel
+    - libitk-devel
     - libitk  5.2
     - nlohmann_json
-    - openmp  # [osx]
+    # - openmp  # [osx]
 
     - root_base  # [linux]
     - libgomp  # [linux]
