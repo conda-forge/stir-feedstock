@@ -13,6 +13,8 @@ source:
 
 build:
   number: 6
+  skip: true  # [not osx]
+  skip: true  # [py!=39]
 
 requirements:
   build:
@@ -26,11 +28,13 @@ requirements:
     - numpy
     - swig
     - hdf5  # [not win]
-    - libitk-devel
+    
+    # - libitk-devel
     - libitk  5.2
-    - root_base  # [linux]
     - nlohmann_json
     - openmp  # [osx]
+
+    - root_base  # [linux]
     - libgomp  # [linux]
     - zlib  # [win]
   run:
