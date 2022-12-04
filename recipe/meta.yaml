@@ -12,8 +12,6 @@ source:
   git_rev: {{ treehash }}
 
 build:
-  skip: true  # [win and py<36]
-  skip: true  # [win and vc<14]
   number: 6
 
 requirements:
@@ -29,7 +27,7 @@ requirements:
     - swig
     - hdf5  # [not win]
     - libitk-devel
-    - libitk <5.2  # [win]
+    - libitk  # [win]
     - libitk  # [not win]
     - root_base  # [linux]
     - nlohmann_json
