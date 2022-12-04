@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/UCL/STIR/releases/download/{{ version }}/STIR-rel_{{ version }}.tar.gz
+  url: https://github.com/UCL/STIR/archive/refs/tags/rel_{{ version }}.tar.gz
   sha256: 1
 
 build:
