@@ -27,8 +27,7 @@ requirements:
     - swig
     - hdf5  # [not win]
     - libitk-devel
-    - libitk  # [win]
-    - libitk  # [not win]
+    - libitk
     - root_base  # [linux]
     - nlohmann_json
     - openmp  # [osx]
