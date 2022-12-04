@@ -30,7 +30,7 @@ requirements:
     - hdf5  # [not win]
     
     - libitk-devel
-    - libitk  5.2
+    - libitk
     - nlohmann_json
 
     - root_base  # [linux]
