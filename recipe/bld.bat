@@ -23,6 +23,10 @@ if errorlevel 1 exit 1
 cmake --build . --target install --config Release
 if errorlevel 1 exit 1
 
+:: Test
+ctest -C Release --output-on-failure
+if errorlevel 1 exit 1
+
 setlocal EnableDelayedExpansion
 
 :: Copy the [de]activate scripts to %PREFIX%\etc\conda\[de]activate.d.

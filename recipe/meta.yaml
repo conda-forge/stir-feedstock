@@ -1,6 +1,6 @@
 
 {% set name = "STIR" %}
-{% set version = "5.0.2" %}
+{% set version = "5.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/UCL/STIR/archive/refs/tags/rel_{{ version }}.tar.gz
-  sha256: 67c434c78606b2823a47c22f1b02844a594aecccf842c2259c0781a19c9ad8de
+  sha256: 724f3b430dca94733aea8325cdf5a9a2043184c3bc7dff8cf6452e1848efd4e3
 
 build:
-  number: 9
+  number: 0
 
 requirements:
   build:
@@ -31,7 +31,7 @@ requirements:
     - libitk-devel
     - libitk
     - nlohmann_json
-    - parallelproj
+    - parallelproj *=cpu*
     - root_base  # [linux]
     - zlib  # [win]
   run:
