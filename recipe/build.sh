@@ -25,11 +25,11 @@ cmake -G "Ninja" \
 # Build.
 cmake --build . --config Release
 
-# Test
-ctest -C Release --output-on-failure
-
 # Install
 cmake --build . --target install --config Release
+
+# Test
+ctest -C Release --output-on-failure
 
 # Copy the [de]activate scripts to $PREFIX/etc/conda/[de]activate.d.
 # This will allow them to be run on environment activation.
