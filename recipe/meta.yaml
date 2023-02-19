@@ -31,8 +31,7 @@ requirements:
     - libitk-devel
     - libitk
     - nlohmann_json
-    - parallelproj *=cpu*  # [cuda_compiler_version == "None"]
-    - parallelproj *=cuda*  # [cuda_compiler_version != "None"]
+    - parallelproj *=cpu*
     - root_base  # [linux]
     - zlib  # [win]
   run:
