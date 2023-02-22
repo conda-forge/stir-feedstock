@@ -2,10 +2,14 @@ mkdir build
 cd build
 
 :: Configure using the CMakeFiles
+
+set CTEST_EXCLUDES="test_priors"
+:: exclude tests using parallelproj GPU
 if NOT "%cuda_compiler_version%"=="None" (
-  set EXTRA_CTEST_EXCLUDES="test_OSMAPOSL_parallelproj test_blocks_on_cylindrical_projectors"
-  echo "Excluding GPU run-time tests %EXTRA_CTEST_EXCLUDES%"
+  set CTEST_EXCLUDES="%CTEST_EXCLUDES%|parallelproj|test_blocks_on_cylindrical_projectors"
 )
+
+echo "Excluding run-time tests %EXTRA_CTEST_EXCLUDES%
 
 echo Start Windows build
 :: Configure.
@@ -30,7 +34,7 @@ cmake --build . --target install --config Release
 if errorlevel 1 exit 1
 
 :: Test
-ctest -C Release -E %EXTRA_CTEST_EXCLUDES% --output-on-failure
+ctest -C Release -E %CTEST_EXCLUDES% --output-on-failure
 if errorlevel 1 exit 1
 
 setlocal EnableDelayedExpansion
