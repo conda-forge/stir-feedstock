@@ -1,6 +1,12 @@
 mkdir build
 cd build
 
+:: Configure using the CMakeFiles
+if NOT "%cuda_compiler_version%"=="None" (
+  set EXTRA_CTEST_EXCLUDES="test_OSMAPOSL_parallelproj test_blocks_on_cylindrical_projectors"
+  echo "Excluding GPU run-time tests %EXTRA_CTEST_EXCLUDES%"
+)
+
 echo Start Windows build
 :: Configure.
 cmake -G "Ninja" ^
@@ -24,7 +30,7 @@ cmake --build . --target install --config Release
 if errorlevel 1 exit 1
 
 :: Test
-ctest -C Release --output-on-failure
+ctest -C Release -E %EXTRA_CTEST_EXCLUDES% --output-on-failure
 if errorlevel 1 exit 1
 
 setlocal EnableDelayedExpansion
