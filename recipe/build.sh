@@ -9,6 +9,13 @@ case $OS in
     ;;
 esac
 
+# since there are no physical GPUs present, we have to disable a few tests
+# when using the GPU version of parallelproh
+if [[ ${cuda_compiler_version:-None} != "None" ]]; then
+  EXTRA_CTEST_EXCLUDES="test_OSMAPOSL_parallelproj test_blocks_on_cylindrical_projectors"
+  echo "Excluding GPU run-time tests $EXTRA_CTEST_EXCLUDES"
+fi
+
 python_exec=`which python`
 mkdir build && cd build
 cmake -G "Ninja" \
@@ -30,7 +37,7 @@ cmake --build . --target install --config Release
 
 # Test
 # but don't run test_priors due to https://github.com/UCL/STIR/issues/1162
-ctest -C Release -E test_priors --output-on-failure
+ctest -C Release -E test_priors -E ${EXTRA_CTEST_EXCLUDES} --output-on-failure
 
 # Copy the [de]activate scripts to $PREFIX/etc/conda/[de]activate.d.
 # This will allow them to be run on environment activation.
