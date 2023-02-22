@@ -9,12 +9,6 @@ case $OS in
     ;;
 esac
 
-if [[ ${cuda_compiler_version:-None} != "None" ]]; then
-  echo "++++++++++++ BUILDING WITH CUDA +++++++++++++++++++++"
-else
-  echo "++++++++++++ BUILDING WITHOUT CUDA ++++++++++++++++++"
-fi
-
 python_exec=`which python`
 mkdir build && cd build
 cmake -G "Ninja" \
