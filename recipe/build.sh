@@ -10,8 +10,7 @@ case $OS in
 esac
 
 CTEST_EXCLUDES=test_priors
-# since there are no physical GPUs present, we have to disable a few tests
-# when using the GPU version of parallelproj
+:: exclude more tests when using parallelproj with CUDA
 if [[ ${cuda_compiler_version:-None} != "None" ]]; then
   CTEST_EXCLUDES="${CTEST_EXCLUDES}|parallelproj|test_blocks_on_cylindrical_projectors"
 fi

@@ -4,12 +4,12 @@ cd build
 :: Configure using the CMakeFiles
 
 set CTEST_EXCLUDES="test_priors"
-:: exclude tests using parallelproj GPU
+:: exclude more tests when using parallelproj with CUDA
 if NOT "%cuda_compiler_version%"=="None" (
   set CTEST_EXCLUDES="%CTEST_EXCLUDES%|parallelproj|test_blocks_on_cylindrical_projectors"
 )
 
-echo "Excluding run-time tests %EXTRA_CTEST_EXCLUDES%
+echo "Excluding run-time tests %CTEST_EXCLUDES%"
 
 echo Start Windows build
 :: Configure.
