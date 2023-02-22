@@ -12,8 +12,6 @@ source:
   sha256: 724f3b430dca94733aea8325cdf5a9a2043184c3bc7dff8cf6452e1848efd4e3
 
 build:
-  run_exports:
-    - {{ pin_subpackage( name|lower, max_pin='x.x') }}
   number: {{ build_number }}
   ignore_run_exports:
     - cudatoolkit
@@ -24,6 +22,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ compiler('cuda') }}  # [cuda_compiler_version != "None"]
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
     - cmake
