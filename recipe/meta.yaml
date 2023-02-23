@@ -13,6 +13,7 @@ source:
 
 build:
   number: {{ build_number }}
+  skip: true  # [linux and cuda_compiler_version == "10.2"]
   ignore_run_exports:
     - cudatoolkit
   string: cpuh{{ PKG_HASH }}_{{ build_number }}  # [cuda_compiler_version == "None"]
