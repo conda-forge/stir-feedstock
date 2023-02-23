@@ -9,8 +9,8 @@ case $OS in
     ;;
 esac
 
+# exclude more tests when using parallelproj with CUDA
 CTEST_EXCLUDES=test_priors
-:: exclude more tests when using parallelproj with CUDA
 if [[ ${cuda_compiler_version:-None} != "None" ]]; then
   CTEST_EXCLUDES="${CTEST_EXCLUDES}|parallelproj|test_blocks_on_cylindrical_projectors"
 fi
