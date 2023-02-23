@@ -38,7 +38,7 @@ cmake --build . --target install --config Release
 
 # Test
 # but don't run test_priors due to https://github.com/UCL/STIR/issues/1162
-ctest -C Release -E "${CTEST_EXCLUDES}" --output-on-failure
+ctest -C Release -E "(${CTEST_EXCLUDES})" --output-on-failure
 
 # Copy the [de]activate scripts to $PREFIX/etc/conda/[de]activate.d.
 # This will allow them to be run on environment activation.

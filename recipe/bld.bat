@@ -3,7 +3,7 @@ cd build
 
 :: Configure using the CMakeFiles
 
-set CTEST_EXCLUDES="test_priors"
+set CTEST_EXCLUDES=test_priors
 :: exclude more tests when using parallelproj with CUDA
 if NOT "%cuda_compiler_version%"=="None" (
   set CTEST_EXCLUDES="%CTEST_EXCLUDES%|parallelproj|test_blocks_on_cylindrical_projectors"
@@ -34,7 +34,7 @@ cmake --build . --target install --config Release
 if errorlevel 1 exit 1
 
 :: Test
-ctest -C Release -E "%CTEST_EXCLUDES%" --output-on-failure
+ctest -C Release -E (%CTEST_EXCLUDES%) --output-on-failure
 if errorlevel 1 exit 1
 
 setlocal EnableDelayedExpansion
