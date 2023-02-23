@@ -1,6 +1,7 @@
 
 {% set name = "STIR" %}
 {% set version = "5.1.0" %}
+{% set build_number = 1 %}
 
 package:
   name: {{ name|lower }}
@@ -11,12 +12,18 @@ source:
   sha256: 724f3b430dca94733aea8325cdf5a9a2043184c3bc7dff8cf6452e1848efd4e3
 
 build:
-  number: 0
+  number: {{ build_number }}
+  skip: true  # [linux and cuda_compiler_version == "10.2"]
+  ignore_run_exports:
+    - cudatoolkit
+  string: cpuh{{ PKG_HASH }}_{{ build_number }}  # [cuda_compiler_version == "None"]
+  string: cuda{{ cuda_compiler_version|string }}h{{ PKG_HASH }}_{{ build_number }}  # [cuda_compiler_version != "None"]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ compiler('cuda') }}  # [cuda_compiler_version != "None"]
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
     - cmake
@@ -31,7 +38,8 @@ requirements:
     - libitk-devel
     - libitk
     - nlohmann_json
-    - parallelproj *=cpu*
+    - parallelproj *=cpu*  # [cuda_compiler_version == "None"]
+    - parallelproj *=cuda*  # [cuda_compiler_version != "None"]
     - root_base  # [linux]
     - zlib  # [win]
   run:

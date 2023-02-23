@@ -8,14 +8,50 @@ jobs:
     vmImage: windows-2019
   strategy:
     matrix:
-      win_64_numpy1.20python3.8.____cpython:
-        CONFIG: win_64_numpy1.20python3.8.____cpython
+      win_64_cuda_compiler_version10.2numpy1.20python3.8.____cpython:
+        CONFIG: win_64_cuda_compiler_version10.2numpy1.20python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
-      win_64_numpy1.20python3.9.____cpython:
-        CONFIG: win_64_numpy1.20python3.9.____cpython
+      win_64_cuda_compiler_version10.2numpy1.20python3.9.____cpython:
+        CONFIG: win_64_cuda_compiler_version10.2numpy1.20python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
-      win_64_numpy1.21python3.10.____cpython:
-        CONFIG: win_64_numpy1.21python3.10.____cpython
+      win_64_cuda_compiler_version10.2numpy1.21python3.10.____cpython:
+        CONFIG: win_64_cuda_compiler_version10.2numpy1.21python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version11.0numpy1.20python3.8.____cpython:
+        CONFIG: win_64_cuda_compiler_version11.0numpy1.20python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version11.0numpy1.20python3.9.____cpython:
+        CONFIG: win_64_cuda_compiler_version11.0numpy1.20python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version11.0numpy1.21python3.10.____cpython:
+        CONFIG: win_64_cuda_compiler_version11.0numpy1.21python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version11.1numpy1.20python3.8.____cpython:
+        CONFIG: win_64_cuda_compiler_version11.1numpy1.20python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version11.1numpy1.20python3.9.____cpython:
+        CONFIG: win_64_cuda_compiler_version11.1numpy1.20python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version11.1numpy1.21python3.10.____cpython:
+        CONFIG: win_64_cuda_compiler_version11.1numpy1.21python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version11.2numpy1.20python3.8.____cpython:
+        CONFIG: win_64_cuda_compiler_version11.2numpy1.20python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version11.2numpy1.20python3.9.____cpython:
+        CONFIG: win_64_cuda_compiler_version11.2numpy1.20python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_version11.2numpy1.21python3.10.____cpython:
+        CONFIG: win_64_cuda_compiler_version11.2numpy1.21python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_versionNonenumpy1.20python3.8.____cpython:
+        CONFIG: win_64_cuda_compiler_versionNonenumpy1.20python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_versionNonenumpy1.20python3.9.____cpython:
+        CONFIG: win_64_cuda_compiler_versionNonenumpy1.20python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_64_cuda_compiler_versionNonenumpy1.21python3.10.____cpython:
+        CONFIG: win_64_cuda_compiler_versionNonenumpy1.21python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables:
