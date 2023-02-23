@@ -15,7 +15,7 @@ if [[ ${cuda_compiler_version:-None} != "None" ]]; then
   CTEST_EXCLUDES="${CTEST_EXCLUDES}|parallelproj|test_blocks_on_cylindrical_projectors"
 fi
 
-echo "Excluding run-time tests $EXTRA_CTEST_EXCLUDES"
+echo "Excluding run-time tests ${CTEST_EXCLUDES}"
 
 python_exec=`which python`
 mkdir build && cd build
