@@ -8,8 +8,8 @@ set CTEST_EXCLUDES=test_priors
 if NOT "%cuda_compiler_version%"=="None" (
   set CTEST_EXCLUDES="%CTEST_EXCLUDES%|parallelproj|test_blocks_on_cylindrical_projectors"
 )
-
-echo "Excluding run-time tests %CTEST_EXCLUDES%"
+:: note: need extra quotes to prevent CMD to interpret the |
+echo "Excluding run-time tests "%CTEST_EXCLUDES%""
 
 echo Start Windows build
 :: Configure.
@@ -34,7 +34,7 @@ cmake --build . --target install --config Release
 if errorlevel 1 exit 1
 
 :: Test
-ctest -C Release -E (%CTEST_EXCLUDES%) --output-on-failure
+ctest -C Release -E %CTEST_EXCLUDES% --output-on-failure
 if errorlevel 1 exit 1
 
 setlocal EnableDelayedExpansion
