@@ -29,8 +29,8 @@ requirements:
     - cmake
     - ninja
     - swig
-  host:
     - python
+  host:
     - boost-cpp
     - numpy
     - hdf5  # [not win]
