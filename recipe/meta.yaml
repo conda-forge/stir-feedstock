@@ -28,11 +28,11 @@ requirements:
     - libgomp      # [linux]
     - cmake
     - ninja
+    - swig
   host:
     - python
     - boost-cpp
     - numpy
-    - swig
     - hdf5  # [not win]
     
     - libitk-devel
