@@ -34,7 +34,7 @@ requirements:
     - numpy                                  # [build_platform != target_platform]
   host:
     - boost-cpp
-    - hdf5  # [not win]
+    - hdf5  # [not win and not osx_arm64]
     - python
     - numpy
     - libitk-devel
