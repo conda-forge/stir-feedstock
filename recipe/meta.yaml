@@ -29,12 +29,14 @@ requirements:
     - cmake
     - ninja
     - swig
-    - python
-    - numpy
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]
   host:
     - boost-cpp
     - hdf5  # [not win]
-    
+    - python
+    - numpy
     - libitk-devel
     - libitk
     - nlohmann_json
