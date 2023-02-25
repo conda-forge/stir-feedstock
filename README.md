@@ -1,11 +1,11 @@
-About stir
-==========
+About stir-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stir-feedstock/blob/main/LICENSE.txt)
 
 Home: http://stir.sourceforge.net/
 
 Package license: Apache-2.0 AND LicenseRef-PARAPET-license
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stir-feedstock/blob/main/LICENSE.txt)
 
 Summary: Software for Tomographic Image Reconstruction
 
