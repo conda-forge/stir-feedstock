@@ -1,5 +1,7 @@
+# verbose shell output
+set -xv
+
 OS=`uname`
-# disable HDF5 currently on all systems due to conflicts
 case $OS in
   'Darwin')
     EXTRA_OPTS="-DDISABLE_HDF5:BOOL=OFF"
@@ -8,9 +10,15 @@ case $OS in
     EXTRA_OPTS="-DDISABLE_HDF5:BOOL=OFF"
     ;;
 esac
+# disable HDF5 on osx_arm64 as it is bigendian, and STIR doesn't know how to handle that for GEHDF5
+if [[ "$CONDA_TOOLCHAIN_HOST" == "arm"* ]]; then
+  echo "Disabling HDF5 support in STIR"
+  EXTRA_OPTS="-DDISABLE_HDF5:BOOL=ON"
+fi
 
-# exclude more tests when using parallelproj with CUDA
+# don't run test_priors due to https://github.com/UCL/STIR/issues/1162
 CTEST_EXCLUDES=test_priors
+# exclude more tests when using parallelproj with CUDA
 if [[ ${cuda_compiler_version:-None} != "None" ]]; then
   CTEST_EXCLUDES="${CTEST_EXCLUDES}|parallelproj|test_blocks_on_cylindrical_projectors"
 fi
@@ -19,7 +27,11 @@ echo "Excluding run-time tests ${CTEST_EXCLUDES}"
 
 python_exec=`which python`
 mkdir build && cd build
-cmake -G "Ninja" \
+
+# Run CMake
+# Addition of CMAKE_ARGS is recommended on https://conda-forge.org/blog/posts/2020-10-29-macos-arm64/#how-to-add-a-osx-arm64-build-to-a-feedstock
+cmake ${CMAKE_ARGS} \
+      -G "Ninja" \
       -D CMAKE_INSTALL_PREFIX=$PREFIX \
       -D CMAKE_PREFIX_PATH=$PREFIX \
       -D PYTHON_DEST=$SP_DIR \
@@ -36,9 +48,10 @@ cmake --build . --config Release
 # Install
 cmake --build . --target install --config Release
 
-# Test
-# but don't run test_priors due to https://github.com/UCL/STIR/issues/1162
-ctest -C Release -E "(${CTEST_EXCLUDES})" --output-on-failure
+# Test, but only if not cross-compiling (e.g. on osx_arm64)
+if [[ "$CONDA_BUILD_CROSS_COMPILATION" != "1" ]]; then
+  ctest -C Release -E "(${CTEST_EXCLUDES})" --output-on-failure
+fi
 
 # Copy the [de]activate scripts to $PREFIX/etc/conda/[de]activate.d.
 # This will allow them to be run on environment activation.
