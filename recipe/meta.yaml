@@ -1,7 +1,7 @@
 
 {% set name = "STIR" %}
 {% set version = "5.1.0" %}
-{% set build_number = 1 %}
+{% set build_number = 2 %}
 
 package:
   name: {{ name|lower }}
@@ -28,13 +28,15 @@ requirements:
     - libgomp      # [linux]
     - cmake
     - ninja
-  host:
-    - python
-    - boost-cpp
-    - numpy
     - swig
-    - hdf5  # [not win]
-    
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]
+  host:
+    - boost-cpp
+    - hdf5  # [not win and not osx_arm64]
+    - python
+    - numpy
     - libitk-devel
     - libitk
     - nlohmann_json
