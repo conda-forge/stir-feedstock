@@ -12,8 +12,9 @@ case $OS in
 esac
 # disable HDF5 on osx_arm64 as it is bigendian, and STIR doesn't know how to handle that for GEHDF5
 if [[ "$CONDA_TOOLCHAIN_HOST" == "arm"* ]]; then
-  echo "Disabling HDF5 support in STIR"
-  EXTRA_OPTS="-DDISABLE_HDF5:BOOL=ON"
+  # sadly currently also need to disable ITK due to UCL/STIR#1165
+  echo "Disabling HDF5 and ITK support in STIR"
+  EXTRA_OPTS="-DDISABLE_HDF5:BOOL=ON -DDISABLE_ITK:BOOL=ON"
 fi
 
 # don't run test_priors due to https://github.com/UCL/STIR/issues/1162
