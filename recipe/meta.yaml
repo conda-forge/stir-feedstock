@@ -47,6 +47,8 @@ requirements:
   run:
     - python
     - {{ pin_compatible('numpy') }}
+    - parallelproj *=cpu*  # [cuda_compiler_version == "None"]
+    - parallelproj *=cuda*  # [cuda_compiler_version != "None"]
 
 test:
   requires:
