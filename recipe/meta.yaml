@@ -1,7 +1,7 @@
 
 {% set name = "STIR" %}
 {% set version = "5.1.0" %}
-{% set build_number = 2 %}
+{% set build_number = 3 %}
 
 package:
   name: {{ name|lower }}
@@ -47,6 +47,7 @@ requirements:
   run:
     - python
     - {{ pin_compatible('numpy') }}
+    - __cuda  # [cuda_compiler_version != "None"]
 
 test:
   requires:
