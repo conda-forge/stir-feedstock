@@ -33,7 +33,7 @@ pin_run_as_build:
 python:
 - 3.10.* *_cpython
 root_base:
-- 6.26.10
+- 6.28.0
 target_platform:
 - linux-64
 zip_keys:

@@ -50,7 +50,7 @@ cmake --build . --config Release
 cmake --build . --target install --config Release
 
 # Test, but only if not cross-compiling (e.g. on osx_arm64)
-if [[ "$CONDA_BUILD_CROSS_COMPILATION" != "1" ]]; then
+if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR}" != "" ]]; then
   ctest -C Release -E "(${CTEST_EXCLUDES})" --output-on-failure
 fi
 
