@@ -1,15 +1,16 @@
 
 {% set name = "STIR" %}
-{% set version = "5.1.0" %}
-{% set build_number = 4 %}
-
+{% set version = "5.2.0" %}
+{% set build_number = 0 %}
+{% set dev_number = 1 %}
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: {{ version }}dev{{ dev_number }}
 
 source:
-  url: https://github.com/UCL/STIR/archive/refs/tags/rel_{{ version }}.tar.gz
-  sha256: 724f3b430dca94733aea8325cdf5a9a2043184c3bc7dff8cf6452e1848efd4e3
+  git_url: https://github.com/UCL/STIR.git
+  git_rev: edee8b5864e4b1df701d329d6e78b3da24559044
+  git_depth: 1
 
 build:
   number: {{ build_number }}
@@ -94,7 +95,7 @@ about:
   dev_url: https://github.com/UCL/STIR
 
 extra:
-  recipe-maintainers:
+ recipe-maintainers:
     - KrisThielemans
     - olivierverdier
     - paskino
