@@ -40,8 +40,7 @@ requirements:
     - libitk-devel
     - libitk
     - nlohmann_json
-    - libparallelproj =*=cpu*  # [cuda_compiler_version == "None"]
-    - libparallelproj =*=cuda*  # [cuda_compiler_version != "None"]
+    - libparallelproj
     - root_base  # [linux]
     - zlib  # [win]
   run:
