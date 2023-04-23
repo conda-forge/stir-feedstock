@@ -1,7 +1,11 @@
 
 {% set name = "STIR" %}
 {% set version = "5.1.0" %}
-{% set build_number = 4 %}
+{% set build_number = 5 %}
+
+{% if cuda_compiler_version != "None" %}
+{% set build_number = build_number + 200 %}
+{% endif %}
 
 package:
   name: {{ name|lower }}
@@ -16,8 +20,8 @@ build:
   skip: true  # [linux and cuda_compiler_version == "10.2"]
   ignore_run_exports:
     - cudatoolkit
-  string: cpuh{{ PKG_HASH }}_{{ build_number }}  # [cuda_compiler_version == "None"]
-  string: cuda{{ cuda_compiler_version|string }}h{{ PKG_HASH }}_{{ build_number }}  # [cuda_compiler_version != "None"]
+  string: cuda{{ cuda_compiler_version | replace('.', '') }}_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version != "None"]
+  string: cpu_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version == "None"]
 
 requirements:
   build:
@@ -40,8 +44,7 @@ requirements:
     - libitk-devel
     - libitk
     - nlohmann_json
-    - parallelproj *=cpu*  # [cuda_compiler_version == "None"]
-    - parallelproj *=cuda*  # [cuda_compiler_version != "None"]
+    - libparallelproj
     - root_base  # [linux]
     - zlib  # [win]
   run:

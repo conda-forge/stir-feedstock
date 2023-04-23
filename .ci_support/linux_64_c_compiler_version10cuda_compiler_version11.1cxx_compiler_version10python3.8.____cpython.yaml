@@ -3,7 +3,7 @@ boost_cpp:
 c_compiler:
 - gcc
 c_compiler_version:
-- '9'
+- '10'
 cdt_name:
 - cos7
 channel_sources:
@@ -13,17 +13,17 @@ channel_targets:
 cuda_compiler:
 - nvcc
 cuda_compiler_version:
-- '11.0'
+- '11.1'
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '9'
+- '10'
 docker_image:
-- quay.io/condaforge/linux-anvil-cuda:11.0
+- quay.io/condaforge/linux-anvil-cuda:11.1
 hdf5:
 - 1.12.2
 numpy:
-- '1.20'
+- '1.21'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
@@ -31,7 +31,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.9.* *_cpython
+- 3.8.* *_cpython
 root_base:
 - 6.28.0
 target_platform:
