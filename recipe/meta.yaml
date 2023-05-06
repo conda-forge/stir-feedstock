@@ -1,23 +1,27 @@
 
 {% set name = "STIR" %}
-{% set version = "5.1.0" %}
-{% set build_number = 4 %}
-
+{% set version = "5.2.0" %}
+{% set build_number = 0 %}
+{% if cuda_compiler_version != "None" %}
+{% set build_number = build_number + 200 %}
+{% endif %}
+{% set dev_number = 1 %}
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: {{ version }}dev{{ dev_number }}
 
 source:
-  url: https://github.com/UCL/STIR/archive/refs/tags/rel_{{ version }}.tar.gz
-  sha256: 724f3b430dca94733aea8325cdf5a9a2043184c3bc7dff8cf6452e1848efd4e3
+  git_url: https://github.com/UCL/STIR.git
+  git_rev: 60e4e34e2b2335ea8a6f84b3be53232a0289d478
+  git_depth: 1
 
 build:
   number: {{ build_number }}
   skip: true  # [linux and cuda_compiler_version == "10.2"]
   ignore_run_exports:
     - cudatoolkit
-  string: cpuh{{ PKG_HASH }}_{{ build_number }}  # [cuda_compiler_version == "None"]
-  string: cuda{{ cuda_compiler_version|string }}h{{ PKG_HASH }}_{{ build_number }}  # [cuda_compiler_version != "None"]
+  string: cuda{{ cuda_compiler_version | replace('.', '') }}_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version != "None"]
+  string: cpu_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version == "None"]
 
 requirements:
   build:
@@ -40,8 +44,7 @@ requirements:
     - libitk-devel
     - libitk
     - nlohmann_json
-    - parallelproj *=cpu*  # [cuda_compiler_version == "None"]
-    - parallelproj *=cuda*  # [cuda_compiler_version != "None"]
+    - libparallelproj
     - root_base  # [linux]
     - zlib  # [win]
   run:
