@@ -9,7 +9,7 @@ channel_targets:
 cuda_compiler:
 - nvcc
 cuda_compiler_version:
-- None
+- '11.1'
 cxx_compiler:
 - vs2019
 numpy:
@@ -25,6 +25,8 @@ python:
 target_platform:
 - win-64
 zip_keys:
+- - cuda_compiler
+  - cuda_compiler_version
 - - python
   - numpy
 zlib:

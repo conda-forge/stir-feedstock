@@ -5,21 +5,23 @@ boost_cpp:
 c_compiler:
 - clang
 c_compiler_version:
-- '14'
+- '15'
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge stir_dev
+cuda_compiler:
+- None
 cuda_compiler_version:
 - None
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '14'
+- '15'
 hdf5:
 - 1.12.2
 llvm_openmp:
-- '14'
+- '15'
 macos_machine:
 - arm64-apple-darwin20.0.0
 numpy:
