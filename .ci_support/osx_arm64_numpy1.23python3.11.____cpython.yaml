@@ -19,7 +19,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '15'
 hdf5:
-- 1.14.1
+- 1.14.2
 llvm_openmp:
 - '15'
 macos_machine:
