@@ -1,19 +1,29 @@
 boost_cpp:
 - 1.78.0
 c_compiler:
-- vs2019
+- gcc
+c_compiler_version:
+- '12'
+cdt_name:
+- cos6
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 cuda_compiler:
-- nvcc
+- None
 cuda_compiler_version:
-- '11.1'
+- None
 cxx_compiler:
-- vs2019
+- gxx
+cxx_compiler_version:
+- '12'
+docker_image:
+- quay.io/condaforge/linux-anvil-cos7-x86_64
+hdf5:
+- 1.14.2
 numpy:
-- '1.23'
+- '1.22'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
@@ -21,13 +31,17 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.11.* *_cpython
+- 3.9.* *_cpython
+root_base:
+- 6.28.4
 target_platform:
-- win-64
+- linux-64
 zip_keys:
-- - cuda_compiler
+- - c_compiler_version
+  - cxx_compiler_version
+  - cuda_compiler
   - cuda_compiler_version
+  - cdt_name
+  - docker_image
 - - python
   - numpy
-zlib:
-- '1.2'
