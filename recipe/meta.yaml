@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://github.com/UCL/STIR/archive/refs/tags/rel_{{ version }}.tar.gz
-  sha256: 5D85717A0D0137B6D30E0DC22FE718C1FD33873B26AD0BE44E8DB953FC2BFD31
+  sha256: 5d85717a0d0137b6d30e0dc22fe718c1fd33873b26ad0be44e8db953fc2bfd31
 
 build:
   number: {{ build_number }}
