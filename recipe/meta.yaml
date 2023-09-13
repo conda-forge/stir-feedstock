@@ -5,7 +5,8 @@
 {% if cuda_compiler_version != "None" %}
 {% set build_number = build_number + 200 %}
 {% endif %}
-{% set dev_number = 1 %}
+{% set dev_number = 2 %}
+
 package:
   name: {{ name|lower }}
   version: {{ version }}dev{{ dev_number }}
@@ -45,7 +46,7 @@ requirements:
     - libitk
     - nlohmann_json
     - libparallelproj
-    - root_base  # [linux]
+    - root_base  # [not win]
     - zlib  # [win]
   run:
     - python
@@ -70,7 +71,7 @@ test:
     - ./run_scatter_tests.sh  # [not win]
     - ./run_tests.sh --nointbp  # [not win]
     - ./run_test_zoom_image.sh  # [not win]
-    - ./run_root_GATE.sh  # [linux]
+    - ./run_root_GATE.sh  # [not win]
     - run_tests  # [win]
     - cd SPECT
     - ./run_SPECT_tests.sh  # [not win]
@@ -91,7 +92,7 @@ about:
     to see which dependencies are included in this conda package.
 
     This package contains all STIR utilities and Python support. It is built with ITK on all platforms
-    and ROOT on Linux.
+    and ROOT on Linux and OSX.
 
   doc_url: http://stir.sourceforge.net/documentation
   dev_url: https://github.com/UCL/STIR

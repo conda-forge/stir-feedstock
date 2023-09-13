@@ -7,13 +7,17 @@ channel_sources:
 channel_targets:
 - conda-forge stir_dev
 cuda_compiler:
-- nvcc
+- None
 cuda_compiler_version:
-- '11.8'
+- None
 cxx_compiler:
 - vs2019
 numpy:
+<<<<<<< HEAD:.ci_support/win_64_cuda_compiler_versionNonepython3.9.____cpython.yaml
+- '1.21'
+=======
 - '1.22'
+>>>>>>> main:.ci_support/win_64_cuda_compilerNonecuda_compiler_versionNonenumpy1.22python3.9.____cpython.yaml
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
@@ -21,7 +25,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.10.* *_cpython
+- 3.9.* *_cpython
 target_platform:
 - win-64
 zip_keys:

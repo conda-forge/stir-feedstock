@@ -9,11 +9,15 @@ channel_targets:
 cuda_compiler:
 - nvcc
 cuda_compiler_version:
-- None
+- '11.2'
 cxx_compiler:
 - vs2019
 numpy:
+<<<<<<< HEAD:.ci_support/win_64_cuda_compiler_version11.2python3.9.____cpython.yaml
 - '1.21'
+=======
+- '1.22'
+>>>>>>> main:.ci_support/win_64_cuda_compilernvcccuda_compiler_version11.2numpy1.22python3.9.____cpython.yaml
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
@@ -25,6 +29,8 @@ python:
 target_platform:
 - win-64
 zip_keys:
+- - cuda_compiler
+  - cuda_compiler_version
 - - python
   - numpy
 zlib:
