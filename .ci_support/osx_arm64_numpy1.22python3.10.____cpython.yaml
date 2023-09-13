@@ -9,13 +9,9 @@ c_compiler_version:
 channel_sources:
 - conda-forge
 channel_targets:
-<<<<<<< HEAD:.ci_support/osx_arm64_python3.10.____cpython.yaml
 - conda-forge stir_dev
-=======
-- conda-forge main
 cuda_compiler:
 - None
->>>>>>> main:.ci_support/osx_arm64_numpy1.22python3.10.____cpython.yaml
 cuda_compiler_version:
 - None
 cxx_compiler:

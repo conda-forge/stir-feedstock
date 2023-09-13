@@ -9,13 +9,9 @@ c_compiler_version:
 channel_sources:
 - conda-forge
 channel_targets:
-<<<<<<< HEAD:.ci_support/osx_arm64_python3.8.____cpython.yaml
 - conda-forge stir_dev
-=======
-- conda-forge main
 cuda_compiler:
 - None
->>>>>>> main:.ci_support/osx_arm64_numpy1.22python3.8.____cpython.yaml
 cuda_compiler_version:
 - None
 cxx_compiler:
@@ -29,11 +25,7 @@ llvm_openmp:
 macos_machine:
 - arm64-apple-darwin20.0.0
 numpy:
-<<<<<<< HEAD:.ci_support/osx_arm64_python3.8.____cpython.yaml
-- '1.21'
-=======
 - '1.22'
->>>>>>> main:.ci_support/osx_arm64_numpy1.22python3.8.____cpython.yaml
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
