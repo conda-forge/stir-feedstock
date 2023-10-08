@@ -5,7 +5,7 @@
 {% if cuda_compiler_version != "None" %}
 {% set build_number = build_number + 200 %}
 {% endif %}
-{% set dev_number = 2 %}
+{% set dev_number = 3 %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ package:
 
 source:
   git_url: https://github.com/UCL/STIR.git
-  git_rev: e5d45c615545563df574499a9b9b0ac3958ce43b
+  git_rev: 5b5ab8ab25d91e3f0e287e18bb4c6d026b12a9f4
   git_depth: 1
 
 build:
