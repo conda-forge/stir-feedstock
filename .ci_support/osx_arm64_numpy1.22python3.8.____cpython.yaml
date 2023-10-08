@@ -5,7 +5,7 @@ boost_cpp:
 c_compiler:
 - clang
 c_compiler_version:
-- '15'
+- '16'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -17,19 +17,15 @@ cuda_compiler_version:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '15'
+- '16'
 hdf5:
 - 1.14.2
 llvm_openmp:
-- '15'
+- '16'
 macos_machine:
 - arm64-apple-darwin20.0.0
 numpy:
-<<<<<<< HEAD:.ci_support/osx_arm64_python3.8.____cpython.yaml
-- '1.21'
-=======
 - '1.22'
->>>>>>> main:.ci_support/osx_arm64_numpy1.22python3.8.____cpython.yaml
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x

@@ -13,11 +13,7 @@ cuda_compiler_version:
 cxx_compiler:
 - vs2019
 numpy:
-<<<<<<< HEAD:.ci_support/win_64_cuda_compilernvcccuda_compiler_version11.0python3.9.____cpython.yaml
-- '1.21'
-=======
 - '1.22'
->>>>>>> main:.ci_support/win_64_cuda_compilernvcccuda_compiler_version11.8numpy1.22python3.9.____cpython.yaml
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x

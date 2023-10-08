@@ -23,11 +23,7 @@ docker_image:
 hdf5:
 - 1.14.2
 numpy:
-<<<<<<< HEAD:.ci_support/linux_64_c_compiler_version10cuda_compilernvcccuda_compiler_version11.1cxx_compiler_version10python3.8.____cpython.yaml
-- '1.21'
-=======
 - '1.22'
->>>>>>> main:.ci_support/linux_64_c_compiler_version11cuda_compilernvcccuda_compiler_version11.8cxx_compiler_version11numpy1.22python3.8.____cpython.yaml
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
