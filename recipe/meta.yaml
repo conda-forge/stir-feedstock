@@ -14,7 +14,7 @@ package:
 source:
   git_url: https://github.com/UCL/STIR.git
   git_rev: 5b5ab8ab25d91e3f0e287e18bb4c6d026b12a9f4
-  git_depth: 1
+  git_depth: 200
 
 build:
   number: {{ build_number }}
