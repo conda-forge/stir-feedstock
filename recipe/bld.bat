@@ -3,7 +3,7 @@ cd build
 
 :: Configure using the CMakeFiles
 
-set CTEST_EXCLUDES=test_interpolate_projdata
+set CTEST_EXCLUDES=test_priors
 :: exclude more tests when using parallelproj with CUDA
 if NOT "%cuda_compiler_version%"=="None" (
   set CTEST_EXCLUDES="%CTEST_EXCLUDES%|parallelproj|test_blocks_on_cylindrical_projectors"
