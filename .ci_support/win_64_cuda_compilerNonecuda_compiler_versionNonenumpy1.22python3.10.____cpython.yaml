@@ -5,7 +5,7 @@ c_compiler:
 channel_sources:
 - conda-forge
 channel_targets:
-- conda-forge stir_dev
+- conda-forge main
 cuda_compiler:
 - None
 cuda_compiler_version:
