@@ -31,10 +31,12 @@ mkdir build && cd build
 
 # Run CMake
 # Addition of CMAKE_ARGS is recommended on https://conda-forge.org/blog/posts/2020-10-29-macos-arm64/#how-to-add-a-osx-arm64-build-to-a-feedstock
+# Note: need C++-20 for ROOT 6.3
 cmake ${CMAKE_ARGS} \
       -G "Ninja" \
       -D CMAKE_INSTALL_PREFIX=$PREFIX \
       -D CMAKE_PREFIX_PATH=$PREFIX \
+      -D CMAKE_CXX_STANDARD=20 \
       -D PYTHON_DEST=$SP_DIR \
       -D BUILD_SWIG_PYTHON:BOOL=ON \
       -D Python_EXECUTABLE=${python_exec} \
