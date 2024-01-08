@@ -38,7 +38,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
   host:
-    - boost-cpp
+    - libboost-headers
     - hdf5  # [not win and not osx_arm64]
     - python
     - numpy
