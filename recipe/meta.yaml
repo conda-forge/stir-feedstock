@@ -1,11 +1,11 @@
 
 {% set name = "STIR" %}
-{% set version = "5.2.0" %}
+{% set version = "6.0.0" %}
 {% set build_number = 0 %}
 {% if cuda_compiler_version != "None" %}
 {% set build_number = build_number + 200 %}
 {% endif %}
-{% set dev_number = 3 %}
+{% set dev_number = 0 %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ package:
 
 source:
   git_url: https://github.com/UCL/STIR.git
-  git_rev: 5b5ab8ab25d91e3f0e287e18bb4c6d026b12a9f4
+  git_rev: 434837c8e97a80b6402d6684bceaa849f44b4d8a
   git_depth: 200
 
 build:
@@ -33,12 +33,13 @@ requirements:
     - libgomp      # [linux]
     - cmake
     - ninja
-    - swig
+    - swig         # [not osx]
+    - swig 4.1.*   # [osx]
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
   host:
-    - boost-cpp
+    - libboost-headers
     - hdf5  # [not win and not osx_arm64]
     - python
     - numpy
