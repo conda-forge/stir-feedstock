@@ -17,8 +17,8 @@ if [[ "$CONDA_TOOLCHAIN_HOST" == "arm"* ]]; then
   EXTRA_OPTS="-DDISABLE_HDF5:BOOL=ON -DDISABLE_ITK:BOOL=ON"
 fi
 
-# don't run test_priors due to https://github.com/UCL/STIR/issues/1201
-CTEST_EXCLUDES=test_interpolate_projdata
+# exclude any tests that are known to fail (none at the moment)
+# CTEST_EXCLUDES=test_priors
 # exclude more tests when using parallelproj with CUDA
 if [[ ${cuda_compiler_version:-None} != "None" ]]; then
   CTEST_EXCLUDES="${CTEST_EXCLUDES}|parallelproj|test_blocks_on_cylindrical_projectors"
