@@ -1,2 +1,2 @@
 @set "STIR_CONFIG_DIR="
-
+@set "STIR_DOC_DIR="
