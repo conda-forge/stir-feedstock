@@ -1,1 +1,2 @@
 unset STIR_CONFIG_DIR
+unset STIR_DOC_DIR
