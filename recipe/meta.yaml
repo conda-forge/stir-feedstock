@@ -1,7 +1,7 @@
 
 {% set name = "STIR" %}
 {% set version = "6.0.0" %}
-{% set build_number = 0 %}
+{% set build_number = 1 %}
 {% if cuda_compiler_version != "None" %}
 {% set build_number = build_number + 200 %}
 {% endif %}
