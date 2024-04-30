@@ -1,7 +1,7 @@
 
 {% set name = "STIR" %}
 {% set version = "6.0.0" %}
-{% set build_number = 0 %}
+{% set build_number = 1 %}
 {% if cuda_compiler_version != "None" %}
 {% set build_number = build_number + 200 %}
 {% endif %}
@@ -25,6 +25,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - {{ compiler('cuda') }}  # [cuda_compiler_version != "None"]
     - llvm-openmp  # [osx]
