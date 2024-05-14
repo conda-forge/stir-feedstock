@@ -5,7 +5,7 @@
 {% if cuda_compiler_version != "None" %}
 {% set build_number = build_number + 200 %}
 {% endif %}
-{% set dev_number = 1 %}
+{% set dev_number = 2 %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ package:
 
 source:
   git_url: https://github.com/UCL/STIR.git
-  git_rev: 41cf3d94a91b007a1976e96c267bbe87412c5434
+  git_rev: 90cff236be35628f447ded4d98a046d5c4e3b316
   git_depth: 200
 
 build:
@@ -27,6 +27,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - {{ compiler('cuda') }}  # [cuda_compiler_version != "None"]
     - llvm-openmp  # [osx]
@@ -100,6 +101,5 @@ about:
 extra:
   recipe-maintainers:
     - KrisThielemans
-    - olivierverdier
     - paskino
     - casperdcl

@@ -1,8 +1,8 @@
 # set where STIR installed JSON files are
-STIR_CONFIG_DIR="${CONDA_PREFIX}/share/STIR-6.0/config"
+STIR_CONFIG_DIR="${CONDA_PREFIX}/share/STIR-6.1/config"
 export STIR_CONFIG_DIR
 
-STIR_DOC_DIR="${CONDA_PREFIX}/share/doc/STIR-6.0"
+STIR_DOC_DIR="${CONDA_PREFIX}/share/doc/STIR-6.1"
 export STIR_DOC_DIR
 
 # echo "STIR ACTIVATE STIR_CONFIG_DIR TO $STIR_CONFIG_DIR"
