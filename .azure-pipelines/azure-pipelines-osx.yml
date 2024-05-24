@@ -5,34 +5,72 @@
 jobs:
 - job: osx
   pool:
-    vmImage: macOS-11
+    vmImage: macOS-12
   strategy:
     matrix:
-      osx_64_numpy1.22python3.10.____cpython:
-        CONFIG: osx_64_numpy1.22python3.10.____cpython
+      osx_64_numpy1.22python3.10.____cpythonroot_base6.28.10:
+        CONFIG: osx_64_numpy1.22python3.10.____cpythonroot_base6.28.10
         UPLOAD_PACKAGES: 'True'
-      osx_64_numpy1.22python3.8.____cpython:
-        CONFIG: osx_64_numpy1.22python3.8.____cpython
+      osx_64_numpy1.22python3.10.____cpythonroot_base6.30.2:
+        CONFIG: osx_64_numpy1.22python3.10.____cpythonroot_base6.30.2
         UPLOAD_PACKAGES: 'True'
-      osx_64_numpy1.22python3.9.____cpython:
-        CONFIG: osx_64_numpy1.22python3.9.____cpython
+      osx_64_numpy1.22python3.8.____cpythonroot_base6.28.10:
+        CONFIG: osx_64_numpy1.22python3.8.____cpythonroot_base6.28.10
         UPLOAD_PACKAGES: 'True'
-      osx_64_numpy1.23python3.11.____cpython:
-        CONFIG: osx_64_numpy1.23python3.11.____cpython
+      osx_64_numpy1.22python3.8.____cpythonroot_base6.30.2:
+        CONFIG: osx_64_numpy1.22python3.8.____cpythonroot_base6.30.2
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_numpy1.22python3.10.____cpython:
-        CONFIG: osx_arm64_numpy1.22python3.10.____cpython
+      osx_64_numpy1.22python3.9.____cpythonroot_base6.28.10:
+        CONFIG: osx_64_numpy1.22python3.9.____cpythonroot_base6.28.10
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_numpy1.22python3.8.____cpython:
-        CONFIG: osx_arm64_numpy1.22python3.8.____cpython
+      osx_64_numpy1.22python3.9.____cpythonroot_base6.30.2:
+        CONFIG: osx_64_numpy1.22python3.9.____cpythonroot_base6.30.2
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_numpy1.22python3.9.____cpython:
-        CONFIG: osx_arm64_numpy1.22python3.9.____cpython
+      osx_64_numpy1.23python3.11.____cpythonroot_base6.28.10:
+        CONFIG: osx_64_numpy1.23python3.11.____cpythonroot_base6.28.10
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_numpy1.23python3.11.____cpython:
-        CONFIG: osx_arm64_numpy1.23python3.11.____cpython
+      osx_64_numpy1.23python3.11.____cpythonroot_base6.30.2:
+        CONFIG: osx_64_numpy1.23python3.11.____cpythonroot_base6.30.2
         UPLOAD_PACKAGES: 'True'
+      osx_64_numpy1.26python3.12.____cpythonroot_base6.28.10:
+        CONFIG: osx_64_numpy1.26python3.12.____cpythonroot_base6.28.10
+        UPLOAD_PACKAGES: 'True'
+      osx_64_numpy1.26python3.12.____cpythonroot_base6.30.2:
+        CONFIG: osx_64_numpy1.26python3.12.____cpythonroot_base6.30.2
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_numpy1.22python3.10.____cpythonroot_base6.28.10:
+        CONFIG: osx_arm64_numpy1.22python3.10.____cpythonroot_base6.28.10
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_numpy1.22python3.10.____cpythonroot_base6.30.2:
+        CONFIG: osx_arm64_numpy1.22python3.10.____cpythonroot_base6.30.2
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_numpy1.22python3.8.____cpythonroot_base6.28.10:
+        CONFIG: osx_arm64_numpy1.22python3.8.____cpythonroot_base6.28.10
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_numpy1.22python3.8.____cpythonroot_base6.30.2:
+        CONFIG: osx_arm64_numpy1.22python3.8.____cpythonroot_base6.30.2
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_numpy1.22python3.9.____cpythonroot_base6.28.10:
+        CONFIG: osx_arm64_numpy1.22python3.9.____cpythonroot_base6.28.10
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_numpy1.22python3.9.____cpythonroot_base6.30.2:
+        CONFIG: osx_arm64_numpy1.22python3.9.____cpythonroot_base6.30.2
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_numpy1.23python3.11.____cpythonroot_base6.28.10:
+        CONFIG: osx_arm64_numpy1.23python3.11.____cpythonroot_base6.28.10
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_numpy1.23python3.11.____cpythonroot_base6.30.2:
+        CONFIG: osx_arm64_numpy1.23python3.11.____cpythonroot_base6.30.2
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_numpy1.26python3.12.____cpythonroot_base6.28.10:
+        CONFIG: osx_arm64_numpy1.26python3.12.____cpythonroot_base6.28.10
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_numpy1.26python3.12.____cpythonroot_base6.30.2:
+        CONFIG: osx_arm64_numpy1.26python3.12.____cpythonroot_base6.30.2
+        UPLOAD_PACKAGES: 'True'
+    maxParallel: 15
   timeoutInMinutes: 360
+  variables: {}
 
   steps:
   # TODO: Fast finish on azure pipelines?
