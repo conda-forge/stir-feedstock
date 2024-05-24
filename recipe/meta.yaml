@@ -39,7 +39,7 @@ requirements:
   host:
     - libboost-headers
     - hdf5  # [not win and not osx_arm64]
-    - python
+    - python <3.12
     - numpy
     - libitk-devel
     - libitk
@@ -99,5 +99,6 @@ about:
 extra:
   recipe-maintainers:
     - KrisThielemans
+    - olivierverdier
     - paskino
     - casperdcl
