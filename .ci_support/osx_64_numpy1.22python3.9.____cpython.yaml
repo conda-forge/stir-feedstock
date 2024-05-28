@@ -6,6 +6,10 @@ c_compiler:
 - clang
 c_compiler_version:
 - '16'
+c_stdlib:
+- macosx_deployment_target
+c_stdlib_version:
+- '11.0'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -19,7 +23,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '16'
 hdf5:
-- 1.14.2
+- 1.14.3
 llvm_openmp:
 - '16'
 macos_machine:
@@ -34,6 +38,7 @@ python:
 - 3.9.* *_cpython
 root_base:
 - 6.28.10
+- 6.30.2
 target_platform:
 - osx-64
 zip_keys:
