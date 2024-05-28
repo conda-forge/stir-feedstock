@@ -39,13 +39,13 @@ requirements:
   host:
     - libboost-headers
     - hdf5  # [not win and not osx_arm64]
-    - python <3.12
+    - python
     - numpy
     - libitk-devel
     - libitk
     - nlohmann_json
     - libparallelproj
-    - root_base  # [not win]
+    - root_base  # [not win and not py=312]
     - zlib  # [win]
   run:
     - python
@@ -70,7 +70,7 @@ test:
     - ./run_scatter_tests.sh  # [not win]
     - ./run_tests.sh --nointbp  # [not win]
     - ./run_test_zoom_image.sh  # [not win]
-    - ./run_root_GATE.sh  # [not win]
+    - ./run_root_GATE.sh  # [not win and not py=312]
     - run_tests  # [win]
     - cd SPECT
     - ./run_SPECT_tests.sh  # [not win]
