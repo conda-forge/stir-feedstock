@@ -37,7 +37,7 @@ pin_run_as_build:
 python:
 - 3.8.* *_cpython
 root_base:
-- 6.28.12
+- 6.32.0
 target_platform:
 - osx-64
 zip_keys:

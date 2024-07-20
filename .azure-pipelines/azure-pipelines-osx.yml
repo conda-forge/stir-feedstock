@@ -8,65 +8,65 @@ jobs:
     vmImage: macOS-12
   strategy:
     matrix:
-      osx_64_numpy1.22python3.10.____cpythonroot_base6.28.12:
-        CONFIG: osx_64_numpy1.22python3.10.____cpythonroot_base6.28.12
-        UPLOAD_PACKAGES: 'True'
       osx_64_numpy1.22python3.10.____cpythonroot_base6.30.4:
         CONFIG: osx_64_numpy1.22python3.10.____cpythonroot_base6.30.4
         UPLOAD_PACKAGES: 'True'
-      osx_64_numpy1.22python3.8.____cpythonroot_base6.28.12:
-        CONFIG: osx_64_numpy1.22python3.8.____cpythonroot_base6.28.12
+      osx_64_numpy1.22python3.10.____cpythonroot_base6.32.0:
+        CONFIG: osx_64_numpy1.22python3.10.____cpythonroot_base6.32.0
         UPLOAD_PACKAGES: 'True'
       osx_64_numpy1.22python3.8.____cpythonroot_base6.30.4:
         CONFIG: osx_64_numpy1.22python3.8.____cpythonroot_base6.30.4
         UPLOAD_PACKAGES: 'True'
-      osx_64_numpy1.22python3.9.____cpythonroot_base6.28.12:
-        CONFIG: osx_64_numpy1.22python3.9.____cpythonroot_base6.28.12
+      osx_64_numpy1.22python3.8.____cpythonroot_base6.32.0:
+        CONFIG: osx_64_numpy1.22python3.8.____cpythonroot_base6.32.0
         UPLOAD_PACKAGES: 'True'
       osx_64_numpy1.22python3.9.____cpythonroot_base6.30.4:
         CONFIG: osx_64_numpy1.22python3.9.____cpythonroot_base6.30.4
         UPLOAD_PACKAGES: 'True'
-      osx_64_numpy1.23python3.11.____cpythonroot_base6.28.12:
-        CONFIG: osx_64_numpy1.23python3.11.____cpythonroot_base6.28.12
+      osx_64_numpy1.22python3.9.____cpythonroot_base6.32.0:
+        CONFIG: osx_64_numpy1.22python3.9.____cpythonroot_base6.32.0
         UPLOAD_PACKAGES: 'True'
       osx_64_numpy1.23python3.11.____cpythonroot_base6.30.4:
         CONFIG: osx_64_numpy1.23python3.11.____cpythonroot_base6.30.4
         UPLOAD_PACKAGES: 'True'
-      osx_64_numpy1.26python3.12.____cpythonroot_base6.28.12:
-        CONFIG: osx_64_numpy1.26python3.12.____cpythonroot_base6.28.12
+      osx_64_numpy1.23python3.11.____cpythonroot_base6.32.0:
+        CONFIG: osx_64_numpy1.23python3.11.____cpythonroot_base6.32.0
         UPLOAD_PACKAGES: 'True'
       osx_64_numpy1.26python3.12.____cpythonroot_base6.30.4:
         CONFIG: osx_64_numpy1.26python3.12.____cpythonroot_base6.30.4
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_numpy1.22python3.10.____cpythonroot_base6.28.12:
-        CONFIG: osx_arm64_numpy1.22python3.10.____cpythonroot_base6.28.12
+      osx_64_numpy1.26python3.12.____cpythonroot_base6.32.0:
+        CONFIG: osx_64_numpy1.26python3.12.____cpythonroot_base6.32.0
         UPLOAD_PACKAGES: 'True'
       osx_arm64_numpy1.22python3.10.____cpythonroot_base6.30.4:
         CONFIG: osx_arm64_numpy1.22python3.10.____cpythonroot_base6.30.4
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_numpy1.22python3.8.____cpythonroot_base6.28.12:
-        CONFIG: osx_arm64_numpy1.22python3.8.____cpythonroot_base6.28.12
+      osx_arm64_numpy1.22python3.10.____cpythonroot_base6.32.0:
+        CONFIG: osx_arm64_numpy1.22python3.10.____cpythonroot_base6.32.0
         UPLOAD_PACKAGES: 'True'
       osx_arm64_numpy1.22python3.8.____cpythonroot_base6.30.4:
         CONFIG: osx_arm64_numpy1.22python3.8.____cpythonroot_base6.30.4
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_numpy1.22python3.9.____cpythonroot_base6.28.12:
-        CONFIG: osx_arm64_numpy1.22python3.9.____cpythonroot_base6.28.12
+      osx_arm64_numpy1.22python3.8.____cpythonroot_base6.32.0:
+        CONFIG: osx_arm64_numpy1.22python3.8.____cpythonroot_base6.32.0
         UPLOAD_PACKAGES: 'True'
       osx_arm64_numpy1.22python3.9.____cpythonroot_base6.30.4:
         CONFIG: osx_arm64_numpy1.22python3.9.____cpythonroot_base6.30.4
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_numpy1.23python3.11.____cpythonroot_base6.28.12:
-        CONFIG: osx_arm64_numpy1.23python3.11.____cpythonroot_base6.28.12
+      osx_arm64_numpy1.22python3.9.____cpythonroot_base6.32.0:
+        CONFIG: osx_arm64_numpy1.22python3.9.____cpythonroot_base6.32.0
         UPLOAD_PACKAGES: 'True'
       osx_arm64_numpy1.23python3.11.____cpythonroot_base6.30.4:
         CONFIG: osx_arm64_numpy1.23python3.11.____cpythonroot_base6.30.4
         UPLOAD_PACKAGES: 'True'
-      osx_arm64_numpy1.26python3.12.____cpythonroot_base6.28.12:
-        CONFIG: osx_arm64_numpy1.26python3.12.____cpythonroot_base6.28.12
+      osx_arm64_numpy1.23python3.11.____cpythonroot_base6.32.0:
+        CONFIG: osx_arm64_numpy1.23python3.11.____cpythonroot_base6.32.0
         UPLOAD_PACKAGES: 'True'
       osx_arm64_numpy1.26python3.12.____cpythonroot_base6.30.4:
         CONFIG: osx_arm64_numpy1.26python3.12.____cpythonroot_base6.30.4
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_numpy1.26python3.12.____cpythonroot_base6.32.0:
+        CONFIG: osx_arm64_numpy1.26python3.12.____cpythonroot_base6.32.0
         UPLOAD_PACKAGES: 'True'
     maxParallel: 15
   timeoutInMinutes: 360
