@@ -45,7 +45,7 @@ requirements:
     - libitk
     - nlohmann_json
     - libparallelproj
-    - root_base  # [not win and not py==312 and not osx_arm64]
+    - root_base  # [not win and not py==312 and not osx-arm64]
     - zlib  # [win]
   run:
     - python
