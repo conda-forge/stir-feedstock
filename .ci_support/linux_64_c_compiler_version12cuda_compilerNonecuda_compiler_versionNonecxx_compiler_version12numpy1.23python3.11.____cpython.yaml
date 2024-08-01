@@ -13,9 +13,9 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cuda_compiler:
-- cuda-nvcc
+- None
 cuda_compiler_version:
-- '12.0'
+- None
 cxx_compiler:
 - gxx
 cxx_compiler_version:
@@ -25,14 +25,15 @@ docker_image:
 hdf5:
 - 1.14.3
 numpy:
-- '1.22'
+- '1.23'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.10.* *_cpython
+- 3.11.* *_cpython
 root_base:
+- 6.30.4
 - 6.32.0
 target_platform:
 - linux-64
