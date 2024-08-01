@@ -45,7 +45,8 @@ requirements:
     - libitk
     - nlohmann_json
     - libparallelproj
-    - root_base  # [not win and not py==312 and not osx-arm64]
+    # osx-arm skipped due to https://github.com/conda-forge/root-feedstock/issues/260
+    - root_base  # [not (py==312 or win or (osx and arm64))]
     - zlib  # [win]
   run:
     - python
