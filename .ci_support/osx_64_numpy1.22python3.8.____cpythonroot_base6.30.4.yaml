@@ -24,6 +24,8 @@ cxx_compiler_version:
 - '16'
 hdf5:
 - 1.14.3
+libitk_devel:
+- '5.4'
 llvm_openmp:
 - '16'
 macos_machine:
