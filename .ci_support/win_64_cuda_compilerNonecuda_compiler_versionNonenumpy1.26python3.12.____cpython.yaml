@@ -12,6 +12,8 @@ cuda_compiler_version:
 - None
 cxx_compiler:
 - vs2019
+libitk_devel:
+- '5.4'
 numpy:
 - '1.26'
 pin_run_as_build:
