@@ -1,7 +1,7 @@
 
 {% set name = "STIR" %}
 {% set version = "6.1.0" %}
-{% set build_number = 1 %}
+{% set build_number = 2 %}
 {% if cuda_compiler_version != "None" %}
 {% set build_number = build_number + 200 %}
 {% endif %}
@@ -45,7 +45,8 @@ requirements:
     - libitk
     - nlohmann_json
     - libparallelproj
-    - root_base  # [not win and not py==312]
+    # osx-arm skipped due to https://github.com/conda-forge/root-feedstock/issues/260
+    - root_base  # [not (py==312 or win or (osx and arm64))]
     - zlib  # [win]
   run:
     - python
@@ -70,7 +71,7 @@ test:
     - ./run_scatter_tests.sh  # [not win]
     - ./run_tests.sh --nointbp  # [not win]
     - ./run_test_zoom_image.sh  # [not win]
-    - ./run_root_GATE.sh  # [not win and not py==312]
+    - ./run_root_GATE.sh  # [not win and not py==312 and not osx-arm64]
     - run_tests  # [win]
     - cd SPECT
     - ./run_SPECT_tests.sh  # [not win]
