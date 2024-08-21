@@ -67,7 +67,8 @@ test:
   commands:
     - stir_config --config-dir
     - cd recon_test_pack
-    - ./run_test_simulate_and_recon.sh  # [not win]
+    # use ugly work-around to avoid the next test to run CUDA tests
+    - env TRAVIS=disable_cuda_tests ./run_test_simulate_and_recon.sh  # [not win]
     - ./run_test_listmode_recon.sh  # [not win]
     - ./run_test_simulate_and_recon_with_motion.sh  # [not win]
     - ./run_scatter_tests.sh  # [not win]
