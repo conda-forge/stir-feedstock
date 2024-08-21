@@ -44,6 +44,7 @@ requirements:
     - libitk-devel
     - libitk
     - nlohmann_json
+    - cuda-version {{ cuda_compiler_version }}  # [(cuda_compiler_version or "None") != "None"]
     - libparallelproj
     # osx-arm skipped due to https://github.com/conda-forge/root-feedstock/issues/260
     - root_base  # [not (py==312 or win or (osx and arm64))]
@@ -52,6 +53,7 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - __cuda  # [cuda_compiler_version != "None"]
+    - cuda-version {{ cuda_compiler_version }}  # [(cuda_compiler_version or "None") != "None"]
 
 test:
   requires:
