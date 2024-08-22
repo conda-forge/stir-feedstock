@@ -6,6 +6,12 @@
 {% set build_number = build_number + 200 %}
 {% endif %}
 
+{% if cuda_compiler_version in (None, "None", True, False) %}
+{% set cuda_major = 0 %}
+{% else %}
+{% set cuda_major = environ.get("cuda_compiler_version", "11.8").split(".")[0] | int %}
+{% endif %}
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -28,6 +34,10 @@ requirements:
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - {{ compiler('cuda') }}  # [cuda_compiler_version != "None"]
+    {% if cuda_major >= 12 %}
+    - cuda-driver-dev                        # [build_platform != target_platform]
+    - cuda-cudart-dev                        # [build_platform != target_platform]
+    {% endif %}
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
     - cmake
@@ -45,6 +55,10 @@ requirements:
     - libitk
     - nlohmann_json
     - cuda-version {{ cuda_compiler_version }}  # [(cuda_compiler_version or "None") != "None"]
+    {% if cuda_major >= 12 %}
+    - cuda-driver-dev
+    - cuda-cudart-dev
+    {% endif %}
     - libparallelproj
     # osx-arm skipped due to https://github.com/conda-forge/root-feedstock/issues/260
     - root_base  # [not (py==312 or win or (osx and arm64))]
