@@ -22,7 +22,9 @@ source:
 
 build:
   number: {{ build_number }}
-  skip: true  # [linux and cuda_compiler_version == "10.2"]
+  skip: true
+  # skipping CUDA 11 builds on Windows due to missing cudart.dll problems, see https://github.com/conda-forge/stir-feedstock/pull/121
+  skip: true  # [win and cuda_major < 12]  
   ignore_run_exports:
     - cudatoolkit
   string: cuda{{ cuda_compiler_version | replace('.', '') }}_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version != "None"]
@@ -35,7 +37,7 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('cuda') }}  # [cuda_compiler_version != "None"]
     {% if cuda_major >= 12 %}
-    - cuda-driver-dev                        # [build_platform != target_platform]
+    - cuda-driver-dev                        # [build_platform != target_platform and linux]
     - cuda-cudart-dev                        # [build_platform != target_platform]
     {% endif %}
     - llvm-openmp  # [osx]
@@ -56,7 +58,7 @@ requirements:
     - nlohmann_json
     - cuda-version {{ cuda_compiler_version }}  # [(cuda_compiler_version or "None") != "None"]
     {% if cuda_major >= 12 %}
-    - cuda-driver-dev
+    - cuda-driver-dev                        # [linux]
     - cuda-cudart-dev
     {% endif %}
     - libparallelproj
