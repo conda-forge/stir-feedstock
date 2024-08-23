@@ -22,7 +22,6 @@ source:
 
 build:
   number: {{ build_number }}
-  skip: true
   # skipping CUDA 11 builds on Windows due to missing cudart.dll problems, see https://github.com/conda-forge/stir-feedstock/pull/121
   skip: true  # [win and (cuda_major<12)]
   # skipping osx due to STIR issues #1490, 1491, 1494
