@@ -23,7 +23,7 @@ source:
 build:
   number: {{ build_number }}
   # skipping CUDA 11 builds on Windows due to missing cudart.dll problems, see https://github.com/conda-forge/stir-feedstock/pull/121
-  {% if cuda_major < 12 %}
+  {% if cuda_major == 11 %}
   skip: true  # [win]
   {% endif %}
   # skipping osx due to STIR issues #1490, 1491, 1494
@@ -68,7 +68,7 @@ requirements:
     # Recent ROOT needs C++ 20, but CUDA 11 doesn't support it
     # osx-arm skipped due to https://github.com/conda-forge/root-feedstock/issues/260
     # Python 3.12 not yet supported in ROOT
-    {% if cuda_major < 12 %}
+    {% if cuda_major != 11 %}
     - root_base  # [not (py==312 or win or (osx and arm64))]
     {% endif %}
     - zlib  # [win]
