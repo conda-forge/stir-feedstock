@@ -68,6 +68,7 @@ requirements:
     # Recent ROOT needs C++ 20, but CUDA 11 doesn't support it
     # osx-arm skipped due to https://github.com/conda-forge/root-feedstock/issues/260
     # Python 3.12 not yet supported in ROOT
+    # Note: these conditions have to be replicated in the test section
     {% if cuda_major != 11 %}
     - root_base  # [not (py==312 or win or (osx and arm64))]
     {% endif %}
@@ -97,7 +98,9 @@ test:
     - ./run_scatter_tests.sh  # [not win]
     - ./run_tests.sh --nointbp  # [not win]
     - ./run_test_zoom_image.sh  # [not win]
-    - ./run_root_GATE.sh  # [not win and not py==312 and not osx-arm64]
+    {% if cuda_major != 11 %}
+    - ./run_root_GATE.sh        # [not (py==312 or win or (osx and arm64))]
+    {% endif %}
     - run_tests  # [win]
     - cd SPECT
     - ./run_SPECT_tests.sh  # [not win]
@@ -118,7 +121,7 @@ about:
     to see which dependencies are included in this conda package.
 
     This package contains all STIR utilities and Python support. It is built with ITK on all platforms
-    and ROOT on Linux and OSX.
+    and (where supported) ROOT on Linux and OSX.
 
   doc_url: http://stir.sourceforge.net/documentation
   dev_url: https://github.com/UCL/STIR
