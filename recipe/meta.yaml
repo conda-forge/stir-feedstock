@@ -1,7 +1,7 @@
 
 {% set name = "STIR" %}
 {% set version = "6.2.0" %}
-{% set build_number = 1 %}
+{% set build_number = 2 %}
 {% if cuda_compiler_version != "None" %}
 {% set build_number = build_number + 200 %}
 {% endif %}
@@ -75,7 +75,6 @@ requirements:
     - zlib  # [win]
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - __cuda  # [cuda_compiler_version != "None"]
     - cuda-version {{ cuda_compiler_version }}  # [(cuda_compiler_version or "None") != "None"]
 
