@@ -1,7 +1,7 @@
 
 {% set name = "STIR" %}
 {% set version = "6.2.0" %}
-{% set build_number = 3 %}
+{% set build_number = 4 %}
 {% if cuda_compiler_version != "None" %}
 {% set build_number = build_number + 200 %}
 {% endif %}
@@ -78,6 +78,11 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - __cuda  # [cuda_compiler_version != "None"]
     - cuda-version {{ cuda_compiler_version }}  # [(cuda_compiler_version or "None") != "None"]
+    # Needed for developers, see https://github.com/conda-forge/stir-feedstock/issues/120
+    - libboost-headers
+    # These should be removed later, see https://github.com/UCL/STIR/issues/1535
+    - libitk-devel
+    - libparallelproj
 
 test:
   requires:
