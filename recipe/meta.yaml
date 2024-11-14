@@ -80,7 +80,6 @@ requirements:
     - cuda-version {{ cuda_compiler_version }}  # [(cuda_compiler_version or "None") != "None"]
     # Needed for developers, see https://github.com/conda-forge/stir-feedstock/issues/120
     - libboost-headers
-    # These should be removed later, see https://github.com/UCL/STIR/issues/1535
     - libitk-devel
     - libparallelproj
 
