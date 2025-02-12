@@ -29,13 +29,13 @@ libboost_headers:
 libitk_devel:
 - '5.4'
 numpy:
-- '1.26'
+- '2.0'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.12.* *_cpython
+- 3.11.* *_cpython
 root_base:
 - 6.32.10
 target_platform:

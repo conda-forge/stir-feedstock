@@ -7,9 +7,9 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cuda_compiler:
-- cuda-nvcc
+- None
 cuda_compiler_version:
-- '12.6'
+- None
 cxx_compiler:
 - vs2019
 libboost_headers:
@@ -17,13 +17,13 @@ libboost_headers:
 libitk_devel:
 - '5.4'
 numpy:
-- '1.26'
+- '2.0'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.12.* *_cpython
+- 3.10.* *_cpython
 target_platform:
 - win-64
 zip_keys:
