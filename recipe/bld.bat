@@ -35,7 +35,11 @@ cmake --build . --target install --config Release
 if errorlevel 1 exit 1
 
 :: Test
-ctest -C Release -E %CTEST_EXCLUDES% --output-on-failure
+if defined CTEST_EXCLUDES (
+    ctest -C Release -E %CTEST_EXCLUDES% --output-on-failure
+) else (
+    ctest -C Release --output-on-failure
+)
 if errorlevel 1 exit 1
 
 setlocal EnableDelayedExpansion
