@@ -68,11 +68,8 @@ requirements:
     {% endif %}
     - libparallelproj
     # Recent ROOT needs C++ 20, but CUDA 11 doesn't support it
-    # osx-arm skipped due to https://github.com/conda-forge/root-feedstock/issues/260
-    # Python 3.12 not yet supported in ROOT
-    # Note: these conditions have to be replicated in the test section
     {% if cuda_major != 11 %}
-    - root_base  # [not (py==312 or win or (osx and arm64))]
+    - root_base  # [not win]
     {% endif %}
     - zlib  # [win]
   run:
@@ -105,7 +102,7 @@ test:
     - ./run_tests.sh --nointbp  # [not win]
     - ./run_test_zoom_image.sh  # [not win]
     {% if cuda_major != 11 %}
-    - ./run_root_GATE.sh        # [not (py==312 or win or (osx and arm64))]
+    - ./run_root_GATE.sh        # [not win]
     {% endif %}
     - run_tests  # [win]
     - cd SPECT
