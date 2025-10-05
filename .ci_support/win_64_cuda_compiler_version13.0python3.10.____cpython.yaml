@@ -1,23 +1,15 @@
 c_compiler:
-<<<<<<< HEAD:.ci_support/win_64_cuda_compilercuda-nvcccuda_compiler_version12.0numpy1.22python3.10.____cpython.yaml
-- vs2019
-=======
 - vs2022
->>>>>>> main:.ci_support/win_64_cuda_compiler_version13.0python3.10.____cpython.yaml
 c_stdlib:
 - vs
 channel_sources:
 - conda-forge
 channel_targets:
-- conda-forge main
+- conda-forge stir_dev
 cuda_compiler:
 - cuda-nvcc
 cuda_compiler_version:
-<<<<<<< HEAD:.ci_support/win_64_cuda_compilercuda-nvcccuda_compiler_version12.0numpy1.22python3.10.____cpython.yaml
-- '12.0'
-=======
 - '13.0'
->>>>>>> main:.ci_support/win_64_cuda_compiler_version13.0python3.10.____cpython.yaml
 cxx_compiler:
 - vs2022
 libboost_headers:

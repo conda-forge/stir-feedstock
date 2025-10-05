@@ -91,17 +91,6 @@ def verify_config(ns):
             "Note: OSX_SDK_DIR must be set to an absolute path. "
             "Setting this variable implies agreement to the licensing terms of the SDK by Apple."
         )
-<<<<<<< HEAD
-    elif ns.config.startswith("osx"):
-        if "OSX_SDK_DIR" not in os.environ:
-            raise RuntimeError(
-                "Need OSX_SDK_DIR env variable set. Run 'export OSX_SDK_DIR=$PWD/SDKs' "
-                "to download the SDK automatically to '$PWD/SDKs/MacOSX<ver>.sdk'. "
-                "Note: OSX_SDK_DIR must be set to an absolute path. "
-                "Setting this variable implies agreement to the licensing terms of the SDK by Apple."
-            )
-=======
->>>>>>> main
 
 
 def main(args=None):
