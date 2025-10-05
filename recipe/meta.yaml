@@ -5,7 +5,7 @@
 {% if cuda_compiler_version != "None" %}
 {% set build_number = build_number + 200 %}
 {% endif %}
-{% set dev_number = 0 %}
+{% set dev_number = 1 %}
 
 {% if cuda_compiler_version in (None, "None", True, False) %}
 {% set cuda_major = 0 %}
@@ -28,8 +28,6 @@ build:
   {% if cuda_major == 11 %}
   skip: true  # [win]
   {% endif %}
-  # skipping osx due to STIR issues #1490, 1491, 1494
-  skip: true  # [osx]
   ignore_run_exports:
     - cudatoolkit
   string: cuda{{ cuda_compiler_version | replace('.', '') }}_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version != "None"]
