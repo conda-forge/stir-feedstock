@@ -104,6 +104,7 @@ jobs:
         CONFIG: linux_64_c_stdlib_version2.28cuda_compiler_version13.0python3.13.____cp313root_base6.36.04
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+    maxParallel: 23
   timeoutInMinutes: 360
   variables: {}
 
