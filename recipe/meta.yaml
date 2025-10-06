@@ -87,6 +87,7 @@ requirements:
 test:
   requires:
     - pytest
+    - matplotlib
   imports:
     - stir
   source_files:
