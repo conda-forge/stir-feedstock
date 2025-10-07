@@ -19,7 +19,8 @@ package:
 
 source:
   git_url: https://github.com/UCL/STIR.git
-  git_rev: aef367525cd6295d2e825f442e461bef1bc8b28f
+  # 07Oct2025
+  git_rev: 209db3c72c05e2d9610797d68fa15248b5254921
   git_depth: 200
 
 build:
