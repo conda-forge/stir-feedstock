@@ -5,6 +5,9 @@ OS=`uname`
 case $OS in
   'Darwin')
     EXTRA_OPTS="-DDISABLE_HDF5:BOOL=OFF"
+    # see https://conda-forge.org/docs/maintainer/knowledge_base/#newer-c-features-with-old-sdk 
+    CXXFLAGS="-D_LIBCPP_DISABLE_AVAILABILITY"
+    export CXXFLAGS
     ;;
   *)
     EXTRA_OPTS="-DDISABLE_HDF5:BOOL=OFF"
