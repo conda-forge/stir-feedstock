@@ -1,11 +1,11 @@
 
 {% set name = "STIR" %}
-{% set version = "6.2.0" %}
+{% set version = "6.3.0" %}
 {% set build_number = 0 %}
 {% if cuda_compiler_version != "None" %}
 {% set build_number = build_number + 200 %}
 {% endif %}
-{% set dev_number = 2 %}
+{% set dev_number = 3 %}
 
 {% if cuda_compiler_version in (None, "None", True, False) %}
 {% set cuda_major = 0 %}
@@ -19,8 +19,8 @@ package:
 
 source:
   git_url: https://github.com/UCL/STIR.git
-  # 13Oct2025
-  git_rev: 4210550bfaa19ce8942b52b397ee8bf2a6134a0c
+  # 30Oct2025
+  git_rev: 1135e2dae1b339024311eb742e7b2b97354426b7
   git_depth: 200
 
 build:
