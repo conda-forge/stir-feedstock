@@ -18,9 +18,10 @@ package:
   version: {{ version }}dev{{ dev_number }}
 
 source:
-  git_url: https://github.com/UCL/STIR.git
+  #git_url: https://github.com/UCL/STIR.git
+  git_url: https://github.com/KrisThielemans/STIR-1.git
   # 30Oct2025
-  git_rev: 1135e2dae1b339024311eb742e7b2b97354426b7
+  git_rev: merge_libraries
   git_depth: 200
 
 build:
