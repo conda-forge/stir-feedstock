@@ -21,7 +21,7 @@ source:
   # sha256: 4305e72a5b702dc3ec1d1bae5a9a6b2451ce0feec4580bd2d6c8c5d260d6d8ba
   git_url: https://github.com/UCL/STIR.git
   git_rev: rel_{{ version }}
-  git_depth: 600
+  # git_depth: 600
 
 build:
   number: {{ build_number }}
