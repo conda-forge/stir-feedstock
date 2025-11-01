@@ -12,26 +12,13 @@
 {% set cuda_major = environ.get("cuda_compiler_version", "11.8").split(".")[0] | int %}
 {% endif %}
 
-{% set release = 1 %}
-
 package:
   name: {{ name|lower }}
-{% if release == 1 %}
   version: {{ version }}
-{% else %}
-  version: {{ version }}dev{{ dev_number }}
-{% endif %}
 
 source:
-{% if release == 1 %}
   url: https://github.com/UCL/STIR/archive/refs/tags/rel_{{ version }}.tar.gz
   sha256: 4305e72a5b702dc3ec1d1bae5a9a6b2451ce0feec4580bd2d6c8c5d260d6d8ba
-{% else %}
-  git_url: https://github.com/UCL/STIR.git
-  # 31Oct2025
-  git_rev: 89ff9c5ba1a103ef7b797509cd4150116876e404
-  git_depth: 200
-{% endif %}
 
 build:
   number: {{ build_number }}
