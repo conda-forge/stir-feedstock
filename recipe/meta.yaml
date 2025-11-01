@@ -4,6 +4,7 @@
 {% if cuda_compiler_version != "None" %}
 {% set build_number = build_number + 200 %}
 {% endif %}
+{% set dev_number = 3 %}
 
 {% if cuda_compiler_version in (None, "None", True, False) %}
 {% set cuda_major = 0 %}
@@ -11,13 +12,26 @@
 {% set cuda_major = environ.get("cuda_compiler_version", "11.8").split(".")[0] | int %}
 {% endif %}
 
+{% set release = 1 %}
+
 package:
   name: {{ name|lower }}
+{% if release == 1 %}
   version: {{ version }}
+{% else %}
+  version: {{ version }}dev{{ dev_number }}
+{% endif %}
 
 source:
+{% if release == 1 %}
   url: https://github.com/UCL/STIR/archive/refs/tags/rel_{{ version }}.tar.gz
-  sha256: 2aa7e96549529c28926afc637a5e46528569f306b9f8fd7b7073d6b257cbb0ec
+  sha256: 4305e72a5b702dc3ec1d1bae5a9a6b2451ce0feec4580bd2d6c8c5d260d6d8ba
+{% else %}
+  git_url: https://github.com/UCL/STIR.git
+  # 31Oct2025
+  git_rev: 89ff9c5ba1a103ef7b797509cd4150116876e404
+  git_depth: 200
+{% endif %}
 
 build:
   number: {{ build_number }}
@@ -25,8 +39,6 @@ build:
   {% if cuda_major == 11 %}
   skip: true  # [win]
   {% endif %}
-  # skipping osx due to STIR issues #1490, 1491, 1494
-  skip: true  # [osx]
   ignore_run_exports:
     - cudatoolkit
   string: cuda{{ cuda_compiler_version | replace('.', '') }}_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version != "None"]
@@ -65,11 +77,8 @@ requirements:
     {% endif %}
     - libparallelproj
     # Recent ROOT needs C++ 20, but CUDA 11 doesn't support it
-    # osx-arm skipped due to https://github.com/conda-forge/root-feedstock/issues/260
-    # Python 3.12 not yet supported in ROOT
-    # Note: these conditions have to be replicated in the test section
     {% if cuda_major != 11 %}
-    - root_base  # [not (py==312 or win or (osx and arm64))]
+    - root_base  # [not win]
     {% endif %}
     - zlib  # [win]
   run:
@@ -84,6 +93,7 @@ requirements:
 test:
   requires:
     - pytest
+    - matplotlib
   imports:
     - stir
   source_files:
@@ -101,7 +111,7 @@ test:
     - ./run_tests.sh --nointbp  # [not win]
     - ./run_test_zoom_image.sh  # [not win]
     {% if cuda_major != 11 %}
-    - ./run_root_GATE.sh        # [not (py==312 or win or (osx and arm64))]
+    - ./run_root_GATE.sh        # [not win]
     {% endif %}
     - run_tests  # [win]
     - cd SPECT
@@ -131,6 +141,5 @@ about:
 extra:
   recipe-maintainers:
     - KrisThielemans
-    - olivierverdier
     - paskino
     - casperdcl
