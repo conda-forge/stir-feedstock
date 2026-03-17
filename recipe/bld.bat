@@ -3,8 +3,6 @@ cd build
 
 :: Configure using the CMakeFiles
 
-# exclude any tests that are known to fail (none at the moment)
-# set CTEST_EXCLUDES=test_priors
 :: exclude more tests when using parallelproj with CUDA
 if NOT "%cuda_compiler_version%"=="None" (
   set CTEST_EXCLUDES="%CTEST_EXCLUDES%|parallelproj|test_blocks_on_cylindrical_projectors"
@@ -14,9 +12,7 @@ echo "Excluding run-time tests "%CTEST_EXCLUDES%""
 
 echo Start Windows build
 :: Configure.
-cmake -G "Ninja" ^
-      -D CMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
-      -D DISABLE_HDF5:BOOL=ON ^
+cmake %CMAKE_ARGS% -G "Ninja" ^
       -D PYTHON_DEST=%SP_DIR% ^
       -D BUILD_SWIG_PYTHON:BOOL=ON ^
       -D Python_EXECUTABLE=%PYTHON% ^

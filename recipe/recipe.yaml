@@ -1,0 +1,145 @@
+schema_version: 1
+
+context:
+  name: STIR
+  version: "6.3.0"
+  build_number: 1
+
+  cuda_version: ${{ env.get("CONDA_OVERRIDE_CUDA", default="None") }}
+  with_cuda: ${{ "true" if cuda_version != "None" else "" }}
+  cuda_major: ${{ (cuda_version | split(".") | first) if with_cuda else "0" }}
+  cuda_build_prefix: ${{ "cuda" ~ (cuda_version | version_to_buildstring) if with_cuda else "cpu" }}
+
+package:
+  name: ${{ name | lower }}
+  version: ${{ version }}
+
+source:
+  git: https://github.com/UCL/STIR.git
+  tag: rel_${{ version }}
+  patches:
+    - 0001-skip-KOSMAPOSL-test-for-conda.patch
+
+build:
+  number: ${{ build_number + 200 if with_cuda else build_number }}
+  # skipping CUDA 11 builds on Windows due to missing cudart.dll problems
+  # see https://github.com/conda-forge/stir-feedstock/pull/121
+  skip:
+    - win and cuda_compiler_version == "11.8"
+  string: ${{ cuda_build_prefix }}_h${{ hash }}_${{ build_number + 200 if with_cuda else build_number }}
+  variant:
+    use_keys:
+      - ${{ "cuda" if with_cuda }}
+    down_prioritize_variant: ${{ 0 if with_cuda else 1 }}
+  script:
+    file: build
+    env:
+      cuda_compiler_version: ${{ cuda_version }}
+requirements:
+  ignore_run_exports:
+    by_name:
+      - cudatoolkit
+  build:
+    - ${{ compiler('c') }}
+    - ${{ stdlib('c') }}
+    - ${{ compiler('cxx') }}
+    - if: with_cuda
+      then: ${{ compiler('cuda') }}
+    - if: osx
+      then: llvm-openmp
+    - if: linux
+      then: libgomp
+    - cmake
+    - ninja
+    - swig
+  host:
+    - libboost-headers
+    - if: not win and not (osx and arm64)
+      then: hdf5
+    - python
+    - numpy
+    - libitk-devel
+    - libitk
+    - nlohmann_json
+    - if: with_cuda
+      then:
+        - cuda-version ==${{ cuda_version }}
+    - if: with_cuda and (cuda_major | int) >= 12 and linux
+      then: cuda-driver-dev
+    - if: with_cuda and (cuda_major | int) >= 12
+      then: cuda-cudart-dev
+    - libparallelproj
+    # Recent ROOT needs C++ 20, but CUDA 11 doesn't support it
+    - if: not win and (cuda_major | int) != 11
+      then: root_base
+    - if: win
+      then: zlib
+  run:
+    - python
+    - if: with_cuda
+      then:
+        - __cuda
+        - cuda-version ==${{ cuda_version }}
+    # Needed for developers, see https://github.com/conda-forge/stir-feedstock/issues/120
+    - libboost-headers
+    - libitk-devel
+    - libparallelproj
+
+tests:
+  - script:
+      - python -c "import stir"
+    requirements:
+      run:
+        - pytest
+        - matplotlib
+  - script:
+      - stir_config --config-dir
+      - if: not win
+        then:
+          - cd recon_test_pack
+          # use ugly work-around to avoid the next test to run CUDA tests
+          - env TRAVIS=disable_cuda_tests ./run_test_simulate_and_recon.sh
+          - ./run_test_listmode_recon.sh
+          - ./run_test_simulate_and_recon_with_motion.sh
+          - ./run_scatter_tests.sh
+          - ./run_tests.sh --nointbp
+          - ./run_test_zoom_image.sh
+      - if: not win and (cuda_major | int) != 11
+        then:
+          - ./run_root_GATE.sh
+      - if: not win
+        then:
+          - cd SPECT
+          - ./run_SPECT_tests.sh
+          - cd ../..
+          - pytest src/swig/test/python
+      - if: win
+        then:
+          - run_tests
+    files:
+      source:
+        - recon_test_pack
+        - examples
+        - src/swig/test/python
+
+about:
+  homepage: https://stir.sourceforge.net/
+  license: Apache-2.0 AND LicenseRef-PARAPET-license
+  license_file: LICENSE.txt
+  summary: Software for Tomographic Image Reconstruction
+  description: |
+    STIR is Open Source software for use in tomographic imaging.
+    Its aim is to provide a Multi-Platform Object-Oriented framework for all data manipulations in tomographic imaging.
+    Check the recipe at https://github.com/conda-forge/stir-feedstock/blob/main/recipe/recipe.yaml
+    to see which dependencies are included in this conda package.
+
+    This package contains all STIR utilities and Python support. It is built with ITK on all platforms
+    and (where supported) ROOT on Linux and OSX.
+  documentation: https://stir.sourceforge.net/documentation
+  repository: https://github.com/UCL/STIR
+
+extra:
+  recipe-maintainers:
+    - KrisThielemans
+    - paskino
+    - casperdcl
