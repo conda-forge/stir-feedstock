@@ -17,8 +17,6 @@ package:
 source:
   git: https://github.com/UCL/STIR.git
   tag: rel_${{ version }}
-  patches:
-    - 0001-skip-KOSMAPOSL-test-for-conda.patch
 
 build:
   number: ${{ build_number + 200 if with_cuda else build_number }}
