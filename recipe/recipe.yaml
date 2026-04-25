@@ -85,16 +85,10 @@ requirements:
 
 tests:
   - script:
-      - python -c "import stir"
-    requirements:
-      run:
-        - pytest
-        - matplotlib
-  - script:
       - stir_config --config-dir
+      - cd recon_test_pack
       - if: not win
         then:
-          - cd recon_test_pack
           # use ugly work-around to avoid the next test to run CUDA tests
           - env TRAVIS=disable_cuda_tests ./run_test_simulate_and_recon.sh
           - ./run_test_listmode_recon.sh
@@ -109,11 +103,16 @@ tests:
         then:
           - cd SPECT
           - ./run_SPECT_tests.sh
-          - cd ../..
-          - pytest src/swig/test/python
+          - cd ..
       - if: win
         then:
           - run_tests
+      - cd ..
+      - pytest src/swig/test/python
+    requirements:
+      run:
+        - pytest
+        - matplotlib
     files:
       source:
         - recon_test_pack
