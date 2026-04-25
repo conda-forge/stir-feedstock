@@ -66,7 +66,7 @@ requirements:
       then: cuda-driver-dev
     - if: with_cuda and (cuda_major | int) >= 12
       then: cuda-cudart-dev
-    - libparallelproj
+    - libparallelproj <2.0 
     # Recent ROOT needs C++ 20, but CUDA 11 doesn't support it
     - if: not win and (cuda_major | int) != 11
       then: root_base
