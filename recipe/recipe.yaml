@@ -22,8 +22,11 @@ build:
   number: ${{ build_number + 200 if with_cuda else build_number }}
   # skipping CUDA 11 builds on Windows due to missing cudart.dll problems
   # see https://github.com/conda-forge/stir-feedstock/pull/121
+  # Don't support ROOT 6.38.00 as it caused segfaults in
+  # https://github.com/conda-forge/stir-feedstock/pull/153
   skip:
     - win and cuda_compiler_version == "11.8"
+    - match(root_base, ">=6.38")
   string: ${{ cuda_build_prefix }}_h${{ hash }}_${{ build_number + 200 if with_cuda else build_number }}
   variant:
     use_keys:
