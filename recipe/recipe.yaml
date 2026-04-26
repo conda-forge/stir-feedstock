@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: STIR
-  version: "6.3.0"
-  build_number: 1
+  version: "6.3.1"
+  build_number: 0
 
   cuda_version: ${{ env.get("CONDA_OVERRIDE_CUDA", default="None") }}
   with_cuda: ${{ "true" if cuda_version != "None" else "" }}
