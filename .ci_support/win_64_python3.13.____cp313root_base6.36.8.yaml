@@ -6,8 +6,6 @@ channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
-cuda_compiler_version:
-- '13.0'
 cxx_compiler:
 - vs2022
 libboost_headers:
@@ -21,7 +19,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.11.* *_cpython
+- 3.13.* *_cp313
 root_base:
 - 6.36.8
 target_platform:
