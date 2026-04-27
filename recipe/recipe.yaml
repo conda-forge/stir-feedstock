@@ -67,7 +67,8 @@ requirements:
     - if: with_cuda and (cuda_major | int) >= 12
       then: cuda-cudart-dev
     - libparallelproj <2.0 
-    - root_base
+    - if: not win
+      then: root_base
     - if: win
       then: zlib
   run:
