@@ -20,12 +20,9 @@ source:
 
 build:
   number: ${{ build_number + 200 if with_cuda else build_number }}
-  # skipping CUDA 11 builds on Windows due to missing cudart.dll problems
-  # see https://github.com/conda-forge/stir-feedstock/pull/121
   # Don't support ROOT 6.38.00 as it caused segfaults in
   # https://github.com/conda-forge/stir-feedstock/pull/153
   skip:
-    - win and cuda_compiler_version == "11.8"
     - match(root_base, ">=6.38")
   string: ${{ cuda_build_prefix }}_h${{ hash }}_${{ build_number + 200 if with_cuda else build_number }}
   variant:
@@ -70,9 +67,7 @@ requirements:
     - if: with_cuda and (cuda_major | int) >= 12
       then: cuda-cudart-dev
     - libparallelproj <2.0 
-    # Recent ROOT needs C++ 20, but CUDA 11 doesn't support it
-    - if: not win and (cuda_major | int) != 11
-      then: root_base
+    - root_base
     - if: win
       then: zlib
   run:
@@ -99,11 +94,7 @@ tests:
           - ./run_scatter_tests.sh
           - ./run_tests.sh --nointbp
           - ./run_test_zoom_image.sh
-      - if: not win and (cuda_major | int) != 11
-        then:
           - ./run_root_GATE.sh
-      - if: not win
-        then:
           - cd SPECT
           - ./run_SPECT_tests.sh
           - cd ..
