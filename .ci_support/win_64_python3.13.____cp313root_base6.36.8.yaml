@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - vs2022
 libboost_headers:
-- '1.88'
+- '1.90'
 libitk_devel:
 - '5.4'
 numpy:

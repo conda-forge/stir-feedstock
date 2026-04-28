@@ -19,7 +19,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '19'
 libboost_headers:
-- '1.88'
+- '1.90'
 libitk_devel:
 - '5.4'
 llvm_openmp:
