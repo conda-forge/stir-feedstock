@@ -21,7 +21,7 @@ cxx_compiler_version:
 hdf5:
 - 1.14.6
 libboost_headers:
-- '1.88'
+- '1.90'
 libitk_devel:
 - '5.4'
 llvm_openmp:
