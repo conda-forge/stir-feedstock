@@ -3,7 +3,7 @@ schema_version: 1
 context:
   name: STIR
   version: "6.3.1"
-  build_number: 0
+  build_number: 1
 
   cuda_version: ${{ env.get("CONDA_OVERRIDE_CUDA", default="None") }}
   with_cuda: ${{ "true" if cuda_version != "None" else "" }}
@@ -62,15 +62,15 @@ requirements:
     - if: with_cuda
       then:
         - cuda-version ==${{ cuda_version }}
-    - if: with_cuda and (cuda_major | int) >= 12 and linux
-      then: cuda-driver-dev
-    - if: with_cuda and (cuda_major | int) >= 12
-      then: cuda-cudart-dev
-    - libparallelproj <2.0 
+        - if: (cuda_major | int) >= 12
+          then:
+            - if: linux
+              then: cuda-driver-dev
+            - cuda-cudart-dev
+    - libparallelproj <2.0
     - if: not win
       then: root_base
-    - if: win
-      then: zlib
+      else: zlib
   run:
     - python
     - if: with_cuda
@@ -99,8 +99,7 @@ tests:
           - cd SPECT
           - ./run_SPECT_tests.sh
           - cd ..
-      - if: win
-        then:
+        else:
           - run_tests
       - cd ..
       - pytest src/swig/test/python
