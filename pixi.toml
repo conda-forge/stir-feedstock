@@ -23,96 +23,186 @@ description = "List contents of all packages found in rattler-build build direct
 [tasks.build]
 cmd = "rattler-build build --recipe recipe"
 description = "Build stir-feedstock directly (without setup scripts), no particular variant specified"
-[tasks."build-linux_64_c_stdlib_version2.17python3.10.____cpythonroot_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.17python3.10.____cpythonroot_base6.36.8.yaml"
-description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.17python3.10.____cpythonroot_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-linux_64_c_stdlib_version2.17python3.10.____cpythonroot_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.17python3.10.____cpythonroot_base6.36.8.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.17python3.10.____cpythonroot_base6.36.8"
-[tasks."build-linux_64_c_stdlib_version2.17python3.11.____cpythonroot_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.17python3.11.____cpythonroot_base6.36.8.yaml"
-description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.17python3.11.____cpythonroot_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-linux_64_c_stdlib_version2.17python3.11.____cpythonroot_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.17python3.11.____cpythonroot_base6.36.8.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.17python3.11.____cpythonroot_base6.36.8"
-[tasks."build-linux_64_c_stdlib_version2.17python3.12.____cpythonroot_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.17python3.12.____cpythonroot_base6.36.8.yaml"
-description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.17python3.12.____cpythonroot_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-linux_64_c_stdlib_version2.17python3.12.____cpythonroot_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.17python3.12.____cpythonroot_base6.36.8.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.17python3.12.____cpythonroot_base6.36.8"
-[tasks."build-linux_64_c_stdlib_version2.17python3.13.____cp313root_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.17python3.13.____cp313root_base6.36.8.yaml"
-description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.17python3.13.____cp313root_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-linux_64_c_stdlib_version2.17python3.13.____cp313root_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.17python3.13.____cp313root_base6.36.8.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.17python3.13.____cp313root_base6.36.8"
-[tasks."build-linux_64_c_stdlib_version2.17python3.14.____cp314root_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.17python3.14.____cp314root_base6.36.8.yaml"
-description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.17python3.14.____cp314root_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-linux_64_c_stdlib_version2.17python3.14.____cp314root_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.17python3.14.____cp314root_base6.36.8.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.17python3.14.____cp314root_base6.36.8"
-[tasks."build-linux_64_c_stdlib_version2.28python3.10.____cpythonroot_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.28python3.10.____cpythonroot_base6.36.8.yaml"
-description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.28python3.10.____cpythonroot_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-linux_64_c_stdlib_version2.28python3.10.____cpythonroot_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.28python3.10.____cpythonroot_base6.36.8.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.28python3.10.____cpythonroot_base6.36.8"
-[tasks."build-linux_64_c_stdlib_version2.28python3.11.____cpythonroot_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.28python3.11.____cpythonroot_base6.36.8.yaml"
-description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.28python3.11.____cpythonroot_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-linux_64_c_stdlib_version2.28python3.11.____cpythonroot_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.28python3.11.____cpythonroot_base6.36.8.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.28python3.11.____cpythonroot_base6.36.8"
-[tasks."build-linux_64_c_stdlib_version2.28python3.12.____cpythonroot_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.28python3.12.____cpythonroot_base6.36.8.yaml"
-description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.28python3.12.____cpythonroot_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-linux_64_c_stdlib_version2.28python3.12.____cpythonroot_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.28python3.12.____cpythonroot_base6.36.8.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.28python3.12.____cpythonroot_base6.36.8"
-[tasks."build-linux_64_c_stdlib_version2.28python3.13.____cp313root_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.28python3.13.____cp313root_base6.36.8.yaml"
-description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.28python3.13.____cp313root_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-linux_64_c_stdlib_version2.28python3.13.____cp313root_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.28python3.13.____cp313root_base6.36.8.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.28python3.13.____cp313root_base6.36.8"
-[tasks."build-linux_64_c_stdlib_version2.28python3.14.____cp314root_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.28python3.14.____cp314root_base6.36.8.yaml"
-description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.28python3.14.____cp314root_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-linux_64_c_stdlib_version2.28python3.14.____cp314root_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.28python3.14.____cp314root_base6.36.8.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.28python3.14.____cp314root_base6.36.8"
-[tasks."build-osx_64_python3.10.____cpythonroot_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_python3.10.____cpythonroot_base6.36.8.yaml"
-description = "Build stir-feedstock with variant osx_64_python3.10.____cpythonroot_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-osx_64_python3.10.____cpythonroot_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_python3.10.____cpythonroot_base6.36.8.yaml"
-description = "List contents of stir-feedstock packages built for variant osx_64_python3.10.____cpythonroot_base6.36.8"
-[tasks."build-osx_64_python3.11.____cpythonroot_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_python3.11.____cpythonroot_base6.36.8.yaml"
-description = "Build stir-feedstock with variant osx_64_python3.11.____cpythonroot_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-osx_64_python3.11.____cpythonroot_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_python3.11.____cpythonroot_base6.36.8.yaml"
-description = "List contents of stir-feedstock packages built for variant osx_64_python3.11.____cpythonroot_base6.36.8"
-[tasks."build-osx_64_python3.12.____cpythonroot_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_python3.12.____cpythonroot_base6.36.8.yaml"
-description = "Build stir-feedstock with variant osx_64_python3.12.____cpythonroot_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-osx_64_python3.12.____cpythonroot_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_python3.12.____cpythonroot_base6.36.8.yaml"
-description = "List contents of stir-feedstock packages built for variant osx_64_python3.12.____cpythonroot_base6.36.8"
-[tasks."build-osx_64_python3.13.____cp313root_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_python3.13.____cp313root_base6.36.8.yaml"
-description = "Build stir-feedstock with variant osx_64_python3.13.____cp313root_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-osx_64_python3.13.____cp313root_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_python3.13.____cp313root_base6.36.8.yaml"
-description = "List contents of stir-feedstock packages built for variant osx_64_python3.13.____cp313root_base6.36.8"
-[tasks."build-osx_64_python3.14.____cp314root_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_python3.14.____cp314root_base6.36.8.yaml"
-description = "Build stir-feedstock with variant osx_64_python3.14.____cp314root_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-osx_64_python3.14.____cp314root_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_python3.14.____cp314root_base6.36.8.yaml"
-description = "List contents of stir-feedstock packages built for variant osx_64_python3.14.____cp314root_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.17hdf51.14.6python3.10.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf51.14.6python3.10.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.17hdf51.14.6python3.10.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.17hdf51.14.6python3.10.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf51.14.6python3.10.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.17hdf51.14.6python3.10.____cpythonroot_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.17hdf51.14.6python3.11.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf51.14.6python3.11.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.17hdf51.14.6python3.11.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.17hdf51.14.6python3.11.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf51.14.6python3.11.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.17hdf51.14.6python3.11.____cpythonroot_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.17hdf51.14.6python3.12.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf51.14.6python3.12.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.17hdf51.14.6python3.12.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.17hdf51.14.6python3.12.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf51.14.6python3.12.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.17hdf51.14.6python3.12.____cpythonroot_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.17hdf51.14.6python3.13.____cp313root_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf51.14.6python3.13.____cp313root_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.17hdf51.14.6python3.13.____cp313root_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.17hdf51.14.6python3.13.____cp313root_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf51.14.6python3.13.____cp313root_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.17hdf51.14.6python3.13.____cp313root_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.17hdf51.14.6python3.14.____cp314root_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf51.14.6python3.14.____cp314root_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.17hdf51.14.6python3.14.____cp314root_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.17hdf51.14.6python3.14.____cp314root_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf51.14.6python3.14.____cp314root_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.17hdf51.14.6python3.14.____cp314root_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.17hdf52python3.10.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf52python3.10.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.17hdf52python3.10.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.17hdf52python3.10.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf52python3.10.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.17hdf52python3.10.____cpythonroot_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.17hdf52python3.11.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf52python3.11.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.17hdf52python3.11.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.17hdf52python3.11.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf52python3.11.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.17hdf52python3.11.____cpythonroot_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.17hdf52python3.12.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf52python3.12.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.17hdf52python3.12.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.17hdf52python3.12.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf52python3.12.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.17hdf52python3.12.____cpythonroot_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.17hdf52python3.13.____cp313root_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf52python3.13.____cp313root_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.17hdf52python3.13.____cp313root_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.17hdf52python3.13.____cp313root_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf52python3.13.____cp313root_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.17hdf52python3.13.____cp313root_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.17hdf52python3.14.____cp314root_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf52python3.14.____cp314root_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.17hdf52python3.14.____cp314root_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.17hdf52python3.14.____cp314root_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.17hdf52python3.14.____cp314root_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.17hdf52python3.14.____cp314root_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.28hdf51.14.6python3.10.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf51.14.6python3.10.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.28hdf51.14.6python3.10.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.28hdf51.14.6python3.10.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf51.14.6python3.10.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.28hdf51.14.6python3.10.____cpythonroot_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.28hdf51.14.6python3.11.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf51.14.6python3.11.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.28hdf51.14.6python3.11.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.28hdf51.14.6python3.11.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf51.14.6python3.11.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.28hdf51.14.6python3.11.____cpythonroot_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.28hdf51.14.6python3.12.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf51.14.6python3.12.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.28hdf51.14.6python3.12.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.28hdf51.14.6python3.12.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf51.14.6python3.12.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.28hdf51.14.6python3.12.____cpythonroot_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.28hdf51.14.6python3.13.____cp313root_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf51.14.6python3.13.____cp313root_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.28hdf51.14.6python3.13.____cp313root_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.28hdf51.14.6python3.13.____cp313root_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf51.14.6python3.13.____cp313root_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.28hdf51.14.6python3.13.____cp313root_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.28hdf51.14.6python3.14.____cp314root_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf51.14.6python3.14.____cp314root_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.28hdf51.14.6python3.14.____cp314root_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.28hdf51.14.6python3.14.____cp314root_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf51.14.6python3.14.____cp314root_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.28hdf51.14.6python3.14.____cp314root_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.28hdf52python3.10.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf52python3.10.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.28hdf52python3.10.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.28hdf52python3.10.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf52python3.10.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.28hdf52python3.10.____cpythonroot_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.28hdf52python3.11.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf52python3.11.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.28hdf52python3.11.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.28hdf52python3.11.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf52python3.11.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.28hdf52python3.11.____cpythonroot_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.28hdf52python3.12.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf52python3.12.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.28hdf52python3.12.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.28hdf52python3.12.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf52python3.12.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.28hdf52python3.12.____cpythonroot_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.28hdf52python3.13.____cp313root_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf52python3.13.____cp313root_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.28hdf52python3.13.____cp313root_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.28hdf52python3.13.____cp313root_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf52python3.13.____cp313root_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.28hdf52python3.13.____cp313root_base6.36.8"
+[tasks."build-linux_64_c_stdlib_version2.28hdf52python3.14.____cp314root_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf52python3.14.____cp314root_base6.36.8.yaml"
+description = "Build stir-feedstock with variant linux_64_c_stdlib_version2.28hdf52python3.14.____cp314root_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-linux_64_c_stdlib_version2.28hdf52python3.14.____cp314root_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_stdlib_version2.28hdf52python3.14.____cp314root_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_stdlib_version2.28hdf52python3.14.____cp314root_base6.36.8"
+[tasks."build-osx_64_hdf51.14.6python3.10.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf51.14.6python3.10.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant osx_64_hdf51.14.6python3.10.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-osx_64_hdf51.14.6python3.10.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_hdf51.14.6python3.10.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant osx_64_hdf51.14.6python3.10.____cpythonroot_base6.36.8"
+[tasks."build-osx_64_hdf51.14.6python3.11.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf51.14.6python3.11.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant osx_64_hdf51.14.6python3.11.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-osx_64_hdf51.14.6python3.11.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_hdf51.14.6python3.11.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant osx_64_hdf51.14.6python3.11.____cpythonroot_base6.36.8"
+[tasks."build-osx_64_hdf51.14.6python3.12.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf51.14.6python3.12.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant osx_64_hdf51.14.6python3.12.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-osx_64_hdf51.14.6python3.12.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_hdf51.14.6python3.12.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant osx_64_hdf51.14.6python3.12.____cpythonroot_base6.36.8"
+[tasks."build-osx_64_hdf51.14.6python3.13.____cp313root_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf51.14.6python3.13.____cp313root_base6.36.8.yaml"
+description = "Build stir-feedstock with variant osx_64_hdf51.14.6python3.13.____cp313root_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-osx_64_hdf51.14.6python3.13.____cp313root_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_hdf51.14.6python3.13.____cp313root_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant osx_64_hdf51.14.6python3.13.____cp313root_base6.36.8"
+[tasks."build-osx_64_hdf51.14.6python3.14.____cp314root_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf51.14.6python3.14.____cp314root_base6.36.8.yaml"
+description = "Build stir-feedstock with variant osx_64_hdf51.14.6python3.14.____cp314root_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-osx_64_hdf51.14.6python3.14.____cp314root_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_hdf51.14.6python3.14.____cp314root_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant osx_64_hdf51.14.6python3.14.____cp314root_base6.36.8"
+[tasks."build-osx_64_hdf52python3.10.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf52python3.10.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant osx_64_hdf52python3.10.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-osx_64_hdf52python3.10.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_hdf52python3.10.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant osx_64_hdf52python3.10.____cpythonroot_base6.36.8"
+[tasks."build-osx_64_hdf52python3.11.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf52python3.11.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant osx_64_hdf52python3.11.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-osx_64_hdf52python3.11.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_hdf52python3.11.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant osx_64_hdf52python3.11.____cpythonroot_base6.36.8"
+[tasks."build-osx_64_hdf52python3.12.____cpythonroot_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf52python3.12.____cpythonroot_base6.36.8.yaml"
+description = "Build stir-feedstock with variant osx_64_hdf52python3.12.____cpythonroot_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-osx_64_hdf52python3.12.____cpythonroot_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_hdf52python3.12.____cpythonroot_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant osx_64_hdf52python3.12.____cpythonroot_base6.36.8"
+[tasks."build-osx_64_hdf52python3.13.____cp313root_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf52python3.13.____cp313root_base6.36.8.yaml"
+description = "Build stir-feedstock with variant osx_64_hdf52python3.13.____cp313root_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-osx_64_hdf52python3.13.____cp313root_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_hdf52python3.13.____cp313root_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant osx_64_hdf52python3.13.____cp313root_base6.36.8"
+[tasks."build-osx_64_hdf52python3.14.____cp314root_base6.36.8"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_hdf52python3.14.____cp314root_base6.36.8.yaml"
+description = "Build stir-feedstock with variant osx_64_hdf52python3.14.____cp314root_base6.36.8 directly (without setup scripts)"
+[tasks."inspect-osx_64_hdf52python3.14.____cp314root_base6.36.8"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_hdf52python3.14.____cp314root_base6.36.8.yaml"
+description = "List contents of stir-feedstock packages built for variant osx_64_hdf52python3.14.____cp314root_base6.36.8"
 [tasks."build-osx_arm64_python3.10.____cpythonroot_base6.36.8"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_python3.10.____cpythonroot_base6.36.8.yaml"
 description = "Build stir-feedstock with variant osx_arm64_python3.10.____cpythonroot_base6.36.8 directly (without setup scripts)"

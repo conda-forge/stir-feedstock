@@ -39,108 +39,213 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_c_stdlib_version2.17python3.10.____cpythonroot_base6.36.8</td>
+              <td>linux_64_c_stdlib_version2.17hdf51.14.6python3.10.____cpythonroot_base6.36.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17python3.10.____cpythonroot_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17hdf51.14.6python3.10.____cpythonroot_base6.36.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_stdlib_version2.17python3.11.____cpythonroot_base6.36.8</td>
+              <td>linux_64_c_stdlib_version2.17hdf51.14.6python3.11.____cpythonroot_base6.36.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17python3.11.____cpythonroot_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17hdf51.14.6python3.11.____cpythonroot_base6.36.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_stdlib_version2.17python3.12.____cpythonroot_base6.36.8</td>
+              <td>linux_64_c_stdlib_version2.17hdf51.14.6python3.12.____cpythonroot_base6.36.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17python3.12.____cpythonroot_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17hdf51.14.6python3.12.____cpythonroot_base6.36.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_stdlib_version2.17python3.13.____cp313root_base6.36.8</td>
+              <td>linux_64_c_stdlib_version2.17hdf51.14.6python3.13.____cp313root_base6.36.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17python3.13.____cp313root_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17hdf51.14.6python3.13.____cp313root_base6.36.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_stdlib_version2.17python3.14.____cp314root_base6.36.8</td>
+              <td>linux_64_c_stdlib_version2.17hdf51.14.6python3.14.____cp314root_base6.36.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17python3.14.____cp314root_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17hdf51.14.6python3.14.____cp314root_base6.36.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_stdlib_version2.28python3.10.____cpythonroot_base6.36.8</td>
+              <td>linux_64_c_stdlib_version2.17hdf52python3.10.____cpythonroot_base6.36.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28python3.10.____cpythonroot_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17hdf52python3.10.____cpythonroot_base6.36.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_stdlib_version2.28python3.11.____cpythonroot_base6.36.8</td>
+              <td>linux_64_c_stdlib_version2.17hdf52python3.11.____cpythonroot_base6.36.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28python3.11.____cpythonroot_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17hdf52python3.11.____cpythonroot_base6.36.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_stdlib_version2.28python3.12.____cpythonroot_base6.36.8</td>
+              <td>linux_64_c_stdlib_version2.17hdf52python3.12.____cpythonroot_base6.36.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28python3.12.____cpythonroot_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17hdf52python3.12.____cpythonroot_base6.36.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_stdlib_version2.28python3.13.____cp313root_base6.36.8</td>
+              <td>linux_64_c_stdlib_version2.17hdf52python3.13.____cp313root_base6.36.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28python3.13.____cp313root_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17hdf52python3.13.____cp313root_base6.36.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_c_stdlib_version2.28python3.14.____cp314root_base6.36.8</td>
+              <td>linux_64_c_stdlib_version2.17hdf52python3.14.____cp314root_base6.36.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28python3.14.____cp314root_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17hdf52python3.14.____cp314root_base6.36.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.10.____cpythonroot_base6.36.8</td>
+              <td>linux_64_c_stdlib_version2.28hdf51.14.6python3.10.____cpythonroot_base6.36.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpythonroot_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28hdf51.14.6python3.10.____cpythonroot_base6.36.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.11.____cpythonroot_base6.36.8</td>
+              <td>linux_64_c_stdlib_version2.28hdf51.14.6python3.11.____cpythonroot_base6.36.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.11.____cpythonroot_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28hdf51.14.6python3.11.____cpythonroot_base6.36.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.12.____cpythonroot_base6.36.8</td>
+              <td>linux_64_c_stdlib_version2.28hdf51.14.6python3.12.____cpythonroot_base6.36.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.12.____cpythonroot_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28hdf51.14.6python3.12.____cpythonroot_base6.36.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.13.____cp313root_base6.36.8</td>
+              <td>linux_64_c_stdlib_version2.28hdf51.14.6python3.13.____cp313root_base6.36.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.13.____cp313root_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28hdf51.14.6python3.13.____cp313root_base6.36.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.14.____cp314root_base6.36.8</td>
+              <td>linux_64_c_stdlib_version2.28hdf51.14.6python3.14.____cp314root_base6.36.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.14.____cp314root_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28hdf51.14.6python3.14.____cp314root_base6.36.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_c_stdlib_version2.28hdf52python3.10.____cpythonroot_base6.36.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28hdf52python3.10.____cpythonroot_base6.36.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_c_stdlib_version2.28hdf52python3.11.____cpythonroot_base6.36.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28hdf52python3.11.____cpythonroot_base6.36.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_c_stdlib_version2.28hdf52python3.12.____cpythonroot_base6.36.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28hdf52python3.12.____cpythonroot_base6.36.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_c_stdlib_version2.28hdf52python3.13.____cp313root_base6.36.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28hdf52python3.13.____cp313root_base6.36.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_c_stdlib_version2.28hdf52python3.14.____cp314root_base6.36.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28hdf52python3.14.____cp314root_base6.36.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_hdf51.14.6python3.10.____cpythonroot_base6.36.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_hdf51.14.6python3.10.____cpythonroot_base6.36.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_hdf51.14.6python3.11.____cpythonroot_base6.36.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_hdf51.14.6python3.11.____cpythonroot_base6.36.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_hdf51.14.6python3.12.____cpythonroot_base6.36.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_hdf51.14.6python3.12.____cpythonroot_base6.36.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_hdf51.14.6python3.13.____cp313root_base6.36.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_hdf51.14.6python3.13.____cp313root_base6.36.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_hdf51.14.6python3.14.____cp314root_base6.36.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_hdf51.14.6python3.14.____cp314root_base6.36.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_hdf52python3.10.____cpythonroot_base6.36.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_hdf52python3.10.____cpythonroot_base6.36.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_hdf52python3.11.____cpythonroot_base6.36.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_hdf52python3.11.____cpythonroot_base6.36.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_hdf52python3.12.____cpythonroot_base6.36.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_hdf52python3.12.____cpythonroot_base6.36.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_hdf52python3.13.____cp313root_base6.36.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_hdf52python3.13.____cp313root_base6.36.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_hdf52python3.14.____cp314root_base6.36.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6240&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stir-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_hdf52python3.14.____cp314root_base6.36.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
