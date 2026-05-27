@@ -8,47 +8,38 @@ jobs:
     vmImage: windows-2022
   strategy:
     matrix:
-      win_64_cuda_compiler_version12.9python3.10.____cpython:
-        CONFIG: win_64_cuda_compiler_version12.9python3.10.____cpython
+      win_64_python3.10.____cpythonroot_base6.36.8:
+        CONFIG: win_64_python3.10.____cpythonroot_base6.36.8
         UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_version12.9python3.11.____cpython:
-        CONFIG: win_64_cuda_compiler_version12.9python3.11.____cpython
+        build_workspace_dir: D:\\bld\\
+        store_build_artifacts: false
+        tools_install_dir: D:\Miniforge
+      win_64_python3.11.____cpythonroot_base6.36.8:
+        CONFIG: win_64_python3.11.____cpythonroot_base6.36.8
         UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_version12.9python3.12.____cpython:
-        CONFIG: win_64_cuda_compiler_version12.9python3.12.____cpython
+        build_workspace_dir: D:\\bld\\
+        store_build_artifacts: false
+        tools_install_dir: D:\Miniforge
+      win_64_python3.12.____cpythonroot_base6.36.8:
+        CONFIG: win_64_python3.12.____cpythonroot_base6.36.8
         UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_version12.9python3.13.____cp313:
-        CONFIG: win_64_cuda_compiler_version12.9python3.13.____cp313
+        build_workspace_dir: D:\\bld\\
+        store_build_artifacts: false
+        tools_install_dir: D:\Miniforge
+      win_64_python3.13.____cp313root_base6.36.8:
+        CONFIG: win_64_python3.13.____cp313root_base6.36.8
         UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_version13.0python3.10.____cpython:
-        CONFIG: win_64_cuda_compiler_version13.0python3.10.____cpython
+        build_workspace_dir: D:\\bld\\
+        store_build_artifacts: false
+        tools_install_dir: D:\Miniforge
+      win_64_python3.14.____cp314root_base6.36.8:
+        CONFIG: win_64_python3.14.____cp314root_base6.36.8
         UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_version13.0python3.11.____cpython:
-        CONFIG: win_64_cuda_compiler_version13.0python3.11.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_version13.0python3.12.____cpython:
-        CONFIG: win_64_cuda_compiler_version13.0python3.12.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_version13.0python3.13.____cp313:
-        CONFIG: win_64_cuda_compiler_version13.0python3.13.____cp313
-        UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_versionNonepython3.10.____cpython:
-        CONFIG: win_64_cuda_compiler_versionNonepython3.10.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_versionNonepython3.11.____cpython:
-        CONFIG: win_64_cuda_compiler_versionNonepython3.11.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_versionNonepython3.12.____cpython:
-        CONFIG: win_64_cuda_compiler_versionNonepython3.12.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_cuda_compiler_versionNonepython3.13.____cp313:
-        CONFIG: win_64_cuda_compiler_versionNonepython3.13.____cp313
-        UPLOAD_PACKAGES: 'True'
-    maxParallel: 12
+        build_workspace_dir: D:\\bld\\
+        store_build_artifacts: false
+        tools_install_dir: D:\Miniforge
   timeoutInMinutes: 360
   variables:
-    CONDA_BLD_PATH: D:\\bld\\
-    MINIFORGE_HOME: D:\Miniforge
     UPLOAD_TEMP: D:\\tmp
 
   steps:
@@ -57,8 +48,8 @@ jobs:
         call ".scripts\run_win_build.bat"
       displayName: Run Windows build
       env:
-        MINIFORGE_HOME: $(MINIFORGE_HOME)
-        CONDA_BLD_PATH: $(CONDA_BLD_PATH)
+        MINIFORGE_HOME: $(tools_install_dir)
+        CONDA_BLD_PATH: $(build_workspace_dir)
         PYTHONUNBUFFERED: 1
         CONFIG: $(CONFIG)
         CI: azure
