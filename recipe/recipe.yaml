@@ -18,8 +18,8 @@ package:
 
 source:
   git: https://github.com/UCL/STIR.git
-  # 25May2026
-  rev: 9ce73d8115724255e7dd7491e3a1380581d44fe1
+  # 27May2026
+  rev: 4bfa2df024d1fc2e9cbe217a074ebe96aa9a6703
   depth: 200
 
 build:
