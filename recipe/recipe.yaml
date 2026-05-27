@@ -5,7 +5,7 @@ context:
   version: "6.4.0"
   build_number: 0
   # need to increment number here
-  dev_string: "dev0"
+  dev_string: "dev1"
 
   cuda_version: ${{ env.get("CONDA_OVERRIDE_CUDA", default="None") }}
   with_cuda: ${{ "true" if cuda_version != "None" else "" }}
@@ -71,7 +71,7 @@ requirements:
             - if: linux
               then: cuda-driver-dev
             - cuda-cudart-dev
-    - libparallelproj <2.0
+    - libparallelproj <3.0
     - if: not win
       then: root_base
       else: zlib
