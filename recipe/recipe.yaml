@@ -2,10 +2,12 @@ schema_version: 1
 
 context:
   name: STIR
-  version: "6.4.0"
+  version: "6.5.0"
+  # 12Aug2026
+  rev: "9a59610aa849483c8d6dd71f981cc5f7bd45a0de"
   build_number: 0
-  # need to increment number here
-  dev_string: "dev1"
+  # need to increment dev number here when changing rev
+  dev_string: "dev0"
 
   cuda_version: ${{ env.get("CONDA_OVERRIDE_CUDA", default="None") }}
   with_cuda: ${{ "true" if cuda_version != "None" else "" }}
@@ -18,16 +20,12 @@ package:
 
 source:
   git: https://github.com/UCL/STIR.git
-  # 27May2026
-  rev: 4bfa2df024d1fc2e9cbe217a074ebe96aa9a6703
+  rev: ${{ rev }}
+  # tag: rel_${{ version }}
   depth: 200
 
 build:
   number: ${{ build_number + 200 if with_cuda else build_number }}
-  # Don't support ROOT 6.38.00 as it caused segfaults in
-  # https://github.com/conda-forge/stir-feedstock/pull/153
-  skip:
-    - match(root_base, ">=6.38")
   string: ${{ cuda_build_prefix }}_h${{ hash }}_${{ build_number + 200 if with_cuda else build_number }}
   variant:
     use_keys:
