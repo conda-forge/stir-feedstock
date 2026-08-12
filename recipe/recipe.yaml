@@ -2,12 +2,12 @@ schema_version: 1
 
 context:
   name: STIR
-  version: "6.4.0"
+  version: "6.5.0"
   # 27May2026
   rev: "4bfa2df024d1fc2e9cbe217a074ebe96aa9a6703"
   build_number: 0
   # need to increment dev number here when changing rev
-  dev_string: "dev1"
+  dev_string: "dev0"
 
   cuda_version: ${{ env.get("CONDA_OVERRIDE_CUDA", default="None") }}
   with_cuda: ${{ "true" if cuda_version != "None" else "" }}
