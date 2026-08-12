@@ -4,7 +4,7 @@ context:
   name: STIR
   version: "6.5.0"
   # 12Aug2026
-  rev: "5a96cbe91e614257b6bb5275447de105657aa204"
+  rev: "9a59610aa849483c8d6dd71f981cc5f7bd45a0de"
   build_number: 0
   # need to increment dev number here when changing rev
   dev_string: "dev0"
