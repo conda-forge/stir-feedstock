@@ -3,8 +3,8 @@ schema_version: 1
 context:
   name: STIR
   version: "6.5.0"
-  # 27May2026
-  rev: "4bfa2df024d1fc2e9cbe217a074ebe96aa9a6703"
+  # 12Aug2026
+  rev: "5a96cbe91e614257b6bb5275447de105657aa204"
   build_number: 0
   # need to increment dev number here when changing rev
   dev_string: "dev0"
@@ -26,10 +26,6 @@ source:
 
 build:
   number: ${{ build_number + 200 if with_cuda else build_number }}
-  # Don't support ROOT 6.38.00 as it caused segfaults in
-  # https://github.com/conda-forge/stir-feedstock/pull/153
-  skip:
-    - match(root_base, ">=6.38")
   string: ${{ cuda_build_prefix }}_h${{ hash }}_${{ build_number + 200 if with_cuda else build_number }}
   variant:
     use_keys:
