@@ -7,7 +7,8 @@ github:
   branch_name: main
   tooling_branch_name: main
 provider:
-  osx_arm64: azure
+  osx_arm64: default
+  linux_aarch64: default
 test: native_and_emulated
 
 bot:
