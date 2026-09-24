@@ -1,4 +1,6 @@
-#! /bin/sh
+#! /bin/bash
 ver=$1
-for f in activate*; do sed -i "s#STIR-6\..#STIR-${ver}#" $f;done
-sed -i -e "s#6\..#${ver}#" -e 's#{% set build_number = . %}#{% set build_number = 0 %}#' meta.yaml
+# get major.minor
+ver_mm=${ver%.*}
+for f in activate*; do sed -i "s#STIR-.\..#STIR-${ver_mm}#" $f;done
+sed -i -e "s#version: \".*\"#version: \"${ver}\"#" -e 's#build_number:.*#build_number: 0#' recipe.yaml
