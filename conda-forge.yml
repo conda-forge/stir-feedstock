@@ -12,4 +12,4 @@ test: native_and_emulated
 
 bot:
   version_updates:
-    allowed_tag_globs: 'rel-*'
+    allowed_tag_globs: 'rel_*'
