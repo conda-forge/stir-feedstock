@@ -9,3 +9,8 @@ github:
 provider:
   osx_arm64: azure
 test: native_and_emulated
+
+bot:
+  version_updates:
+    exclude: '2018'
+    allowed_tag_globs: 'rel-*'
