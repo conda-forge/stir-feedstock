@@ -49,7 +49,8 @@ requirements:
       then: libgomp
     - cmake
     - ninja
-    - swig
+    # current releases of STIR don't support SWIG 4.5 yet. TODO update once moving to STIR 6.5
+    - swig >=4.2,<4.5
   host:
     - libboost-headers
     - if: not win and not (osx and arm64)
