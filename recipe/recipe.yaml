@@ -3,11 +3,11 @@ schema_version: 1
 context:
   name: STIR
   version: "6.5.0"
-  # 12Aug2026
-  rev: "9a59610aa849483c8d6dd71f981cc5f7bd45a0de"
+  # 25Sep2026
+  rev: "3da6880a5b87bb3de8043ccc039848cb1061adb2"
   build_number: 0
   # need to increment dev number here when changing rev
-  dev_string: "dev0"
+  dev_string: "dev1"
 
   cuda_version: ${{ env.get("CONDA_OVERRIDE_CUDA", default="None") }}
   with_cuda: ${{ "true" if cuda_version != "None" else "" }}
@@ -51,7 +51,7 @@ requirements:
       then: libgomp
     - cmake
     - ninja
-    - swig
+    - swig >=4.2
   host:
     - libboost-headers
     - if: not win and not (osx and arm64)
