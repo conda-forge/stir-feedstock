@@ -51,7 +51,7 @@ requirements:
       then: libgomp
     - cmake
     - ninja
-    - swig
+    - swig >=4.2
   host:
     - libboost-headers
     - if: not win and not (osx and arm64)

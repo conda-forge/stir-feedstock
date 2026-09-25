@@ -1,5 +1,5 @@
-azure:
-  free_disk_space: true
+workflow_settings:
+  free_disk_space: 'quick'
 conda_build_tool: rattler-build
 conda_forge_output_validation: true
 conda_install_tool: pixi
@@ -7,5 +7,10 @@ github:
   branch_name: main
   tooling_branch_name: main
 provider:
-  osx_arm64: azure
+  osx_arm64: default
+  linux_aarch64: default
 test: native_and_emulated
+
+bot:
+  version_updates:
+    allowed_tag_globs: 'rel_*'
