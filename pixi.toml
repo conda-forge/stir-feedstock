@@ -37,222 +37,222 @@ description = "List contents of all packages found in rattler-build build direct
 [feature.build.tasks.build]
 cmd = "rattler-build build --recipe recipe"
 description = "Build stir-feedstock directly (without setup scripts), no particular variant specified"
-[feature.build.tasks."build-linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
-description = "Build stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
-description = "Debug stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"
-[feature.build.tasks."build-linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
-description = "Build stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
-description = "Debug stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"
-[feature.build.tasks."build-linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10.yaml --target-platform linux-64"
-description = "Build stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10.yaml --target-platform linux-64"
-description = "Debug stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10"
-[feature.build.tasks."build-linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10.yaml --target-platform linux-64"
-description = "Build stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10.yaml --target-platform linux-64"
-description = "Debug stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10"
-[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
-description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
-description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"
-[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
-description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
-description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"
-[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-64"
-description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-64"
-description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10"
-[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-64"
-description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-64"
-description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10"
-[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
-description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
-description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"
-[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
-description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
-description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"
-[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-64"
-description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-64"
-description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10"
-[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-64"
-description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-64"
-description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10"
-[feature.build.tasks."build-linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"
-[feature.build.tasks."build-linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"
-[feature.build.tasks."build-linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.13.____cp313root_base6.36.10"
-[feature.build.tasks."build-linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cxx_compiler_version14python3.14.____cp314root_base6.36.10"
-[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"
-[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"
-[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.13.____cp313root_base6.36.10"
-[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cxx_compiler_version15python3.14.____cp314root_base6.36.10"
-[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"
-[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"
-[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.13.____cp313root_base6.36.10"
-[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-aarch64"
-description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cxx_compiler_version15python3.14.____cp314root_base6.36.10"
+[feature.build.tasks."build-linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
+description = "Build stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
+description = "Debug stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
+description = "Build stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
+description = "Debug stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10.yaml --target-platform linux-64"
+description = "Build stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10.yaml --target-platform linux-64"
+description = "Debug stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10"
+[feature.build.tasks."build-linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10.yaml --target-platform linux-64"
+description = "Build stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10.yaml --target-platform linux-64"
+description = "Debug stir-feedstock with variant linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10"
+[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
+description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
+description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
+description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
+description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-64"
+description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-64"
+description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10"
+[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-64"
+description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-64"
+description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10"
+[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
+description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
+description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
+description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-64"
+description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-64"
+description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-64"
+description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10"
+[feature.build.tasks."build-linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-64"
+description = "Build stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-64"
+description = "Debug stir-feedstock with variant linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10"
+[feature.build.tasks."build-linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.11.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.12.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.13.____cp313root_base6.36.10"
+[feature.build.tasks."build-linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version14c_stdlib_version2.17cuda_compiler_version12.9cxx_compiler_version14python3.14.____cp314root_base6.36.10"
+[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.11.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.12.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.13.____cp313root_base6.36.10"
+[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.17cuda_compiler_versionNonecxx_compiler_version15python3.14.____cp314root_base6.36.10"
+[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.11.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.12.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.13.____cp313root_base6.36.10"
+[feature.build.tasks."build-linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Build stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml --target-platform linux-aarch64"
+description = "Debug stir-feedstock with variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant linux_aarch64_c_compiler_version15c_stdlib_version2.28cuda_compiler_version13.4cxx_compiler_version15python3.14.____cp314root_base6.36.10"
 [feature.build.tasks."build-osx_64_python3.11.____cpythonroot_base6.36.10"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_python3.11.____cpythonroot_base6.36.10.yaml --target-platform osx-64"
 description = "Build stir-feedstock with variant osx_64_python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
@@ -325,42 +325,114 @@ description = "Debug stir-feedstock with variant osx_arm64_python3.14.____cp314r
 [feature.build.tasks."inspect-osx_arm64_python3.14.____cp314root_base6.36.10"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_python3.14.____cp314root_base6.36.10.yaml"
 description = "List contents of stir-feedstock packages built for variant osx_arm64_python3.14.____cp314root_base6.36.10"
-[feature.build.tasks."build-win_64_python3.11.____cpythonroot_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_python3.11.____cpythonroot_base6.36.10.yaml --target-platform win-64"
-description = "Build stir-feedstock with variant win_64_python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-win_64_python3.11.____cpythonroot_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_python3.11.____cpythonroot_base6.36.10.yaml --target-platform win-64"
-description = "Debug stir-feedstock with variant win_64_python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-win_64_python3.11.____cpythonroot_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_python3.11.____cpythonroot_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant win_64_python3.11.____cpythonroot_base6.36.10"
-[feature.build.tasks."build-win_64_python3.12.____cpythonroot_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_python3.12.____cpythonroot_base6.36.10.yaml --target-platform win-64"
-description = "Build stir-feedstock with variant win_64_python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-win_64_python3.12.____cpythonroot_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_python3.12.____cpythonroot_base6.36.10.yaml --target-platform win-64"
-description = "Debug stir-feedstock with variant win_64_python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-win_64_python3.12.____cpythonroot_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_python3.12.____cpythonroot_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant win_64_python3.12.____cpythonroot_base6.36.10"
-[feature.build.tasks."build-win_64_python3.13.____cp313root_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_python3.13.____cp313root_base6.36.10.yaml --target-platform win-64"
-description = "Build stir-feedstock with variant win_64_python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-win_64_python3.13.____cp313root_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_python3.13.____cp313root_base6.36.10.yaml --target-platform win-64"
-description = "Debug stir-feedstock with variant win_64_python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-win_64_python3.13.____cp313root_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_python3.13.____cp313root_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant win_64_python3.13.____cp313root_base6.36.10"
-[feature.build.tasks."build-win_64_python3.14.____cp314root_base6.36.10"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_python3.14.____cp314root_base6.36.10.yaml --target-platform win-64"
-description = "Build stir-feedstock with variant win_64_python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."debug-win_64_python3.14.____cp314root_base6.36.10"]
-cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_python3.14.____cp314root_base6.36.10.yaml --target-platform win-64"
-description = "Debug stir-feedstock with variant win_64_python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
-[feature.build.tasks."inspect-win_64_python3.14.____cp314root_base6.36.10"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_python3.14.____cp314root_base6.36.10.yaml"
-description = "List contents of stir-feedstock packages built for variant win_64_python3.14.____cp314root_base6.36.10"
+[feature.build.tasks."build-win_64_cuda_compiler_version12.9python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_cuda_compiler_version12.9python3.11.____cpythonroot_base6.36.10.yaml --target-platform win-64"
+description = "Build stir-feedstock with variant win_64_cuda_compiler_version12.9python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_cuda_compiler_version12.9python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_cuda_compiler_version12.9python3.11.____cpythonroot_base6.36.10.yaml --target-platform win-64"
+description = "Debug stir-feedstock with variant win_64_cuda_compiler_version12.9python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_cuda_compiler_version12.9python3.11.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_cuda_compiler_version12.9python3.11.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant win_64_cuda_compiler_version12.9python3.11.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-win_64_cuda_compiler_version12.9python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_cuda_compiler_version12.9python3.12.____cpythonroot_base6.36.10.yaml --target-platform win-64"
+description = "Build stir-feedstock with variant win_64_cuda_compiler_version12.9python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_cuda_compiler_version12.9python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_cuda_compiler_version12.9python3.12.____cpythonroot_base6.36.10.yaml --target-platform win-64"
+description = "Debug stir-feedstock with variant win_64_cuda_compiler_version12.9python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_cuda_compiler_version12.9python3.12.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_cuda_compiler_version12.9python3.12.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant win_64_cuda_compiler_version12.9python3.12.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-win_64_cuda_compiler_version12.9python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_cuda_compiler_version12.9python3.13.____cp313root_base6.36.10.yaml --target-platform win-64"
+description = "Build stir-feedstock with variant win_64_cuda_compiler_version12.9python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_cuda_compiler_version12.9python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_cuda_compiler_version12.9python3.13.____cp313root_base6.36.10.yaml --target-platform win-64"
+description = "Debug stir-feedstock with variant win_64_cuda_compiler_version12.9python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_cuda_compiler_version12.9python3.13.____cp313root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_cuda_compiler_version12.9python3.13.____cp313root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant win_64_cuda_compiler_version12.9python3.13.____cp313root_base6.36.10"
+[feature.build.tasks."build-win_64_cuda_compiler_version12.9python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_cuda_compiler_version12.9python3.14.____cp314root_base6.36.10.yaml --target-platform win-64"
+description = "Build stir-feedstock with variant win_64_cuda_compiler_version12.9python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_cuda_compiler_version12.9python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_cuda_compiler_version12.9python3.14.____cp314root_base6.36.10.yaml --target-platform win-64"
+description = "Debug stir-feedstock with variant win_64_cuda_compiler_version12.9python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_cuda_compiler_version12.9python3.14.____cp314root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_cuda_compiler_version12.9python3.14.____cp314root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant win_64_cuda_compiler_version12.9python3.14.____cp314root_base6.36.10"
+[feature.build.tasks."build-win_64_cuda_compiler_version13.4python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_cuda_compiler_version13.4python3.11.____cpythonroot_base6.36.10.yaml --target-platform win-64"
+description = "Build stir-feedstock with variant win_64_cuda_compiler_version13.4python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_cuda_compiler_version13.4python3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_cuda_compiler_version13.4python3.11.____cpythonroot_base6.36.10.yaml --target-platform win-64"
+description = "Debug stir-feedstock with variant win_64_cuda_compiler_version13.4python3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_cuda_compiler_version13.4python3.11.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_cuda_compiler_version13.4python3.11.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant win_64_cuda_compiler_version13.4python3.11.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-win_64_cuda_compiler_version13.4python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_cuda_compiler_version13.4python3.12.____cpythonroot_base6.36.10.yaml --target-platform win-64"
+description = "Build stir-feedstock with variant win_64_cuda_compiler_version13.4python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_cuda_compiler_version13.4python3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_cuda_compiler_version13.4python3.12.____cpythonroot_base6.36.10.yaml --target-platform win-64"
+description = "Debug stir-feedstock with variant win_64_cuda_compiler_version13.4python3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_cuda_compiler_version13.4python3.12.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_cuda_compiler_version13.4python3.12.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant win_64_cuda_compiler_version13.4python3.12.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-win_64_cuda_compiler_version13.4python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_cuda_compiler_version13.4python3.13.____cp313root_base6.36.10.yaml --target-platform win-64"
+description = "Build stir-feedstock with variant win_64_cuda_compiler_version13.4python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_cuda_compiler_version13.4python3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_cuda_compiler_version13.4python3.13.____cp313root_base6.36.10.yaml --target-platform win-64"
+description = "Debug stir-feedstock with variant win_64_cuda_compiler_version13.4python3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_cuda_compiler_version13.4python3.13.____cp313root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_cuda_compiler_version13.4python3.13.____cp313root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant win_64_cuda_compiler_version13.4python3.13.____cp313root_base6.36.10"
+[feature.build.tasks."build-win_64_cuda_compiler_version13.4python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_cuda_compiler_version13.4python3.14.____cp314root_base6.36.10.yaml --target-platform win-64"
+description = "Build stir-feedstock with variant win_64_cuda_compiler_version13.4python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_cuda_compiler_version13.4python3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_cuda_compiler_version13.4python3.14.____cp314root_base6.36.10.yaml --target-platform win-64"
+description = "Debug stir-feedstock with variant win_64_cuda_compiler_version13.4python3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_cuda_compiler_version13.4python3.14.____cp314root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_cuda_compiler_version13.4python3.14.____cp314root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant win_64_cuda_compiler_version13.4python3.14.____cp314root_base6.36.10"
+[feature.build.tasks."build-win_64_cuda_compiler_versionNonepython3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_cuda_compiler_versionNonepython3.11.____cpythonroot_base6.36.10.yaml --target-platform win-64"
+description = "Build stir-feedstock with variant win_64_cuda_compiler_versionNonepython3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_cuda_compiler_versionNonepython3.11.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_cuda_compiler_versionNonepython3.11.____cpythonroot_base6.36.10.yaml --target-platform win-64"
+description = "Debug stir-feedstock with variant win_64_cuda_compiler_versionNonepython3.11.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_cuda_compiler_versionNonepython3.11.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_cuda_compiler_versionNonepython3.11.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant win_64_cuda_compiler_versionNonepython3.11.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-win_64_cuda_compiler_versionNonepython3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_cuda_compiler_versionNonepython3.12.____cpythonroot_base6.36.10.yaml --target-platform win-64"
+description = "Build stir-feedstock with variant win_64_cuda_compiler_versionNonepython3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_cuda_compiler_versionNonepython3.12.____cpythonroot_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_cuda_compiler_versionNonepython3.12.____cpythonroot_base6.36.10.yaml --target-platform win-64"
+description = "Debug stir-feedstock with variant win_64_cuda_compiler_versionNonepython3.12.____cpythonroot_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_cuda_compiler_versionNonepython3.12.____cpythonroot_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_cuda_compiler_versionNonepython3.12.____cpythonroot_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant win_64_cuda_compiler_versionNonepython3.12.____cpythonroot_base6.36.10"
+[feature.build.tasks."build-win_64_cuda_compiler_versionNonepython3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_cuda_compiler_versionNonepython3.13.____cp313root_base6.36.10.yaml --target-platform win-64"
+description = "Build stir-feedstock with variant win_64_cuda_compiler_versionNonepython3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_cuda_compiler_versionNonepython3.13.____cp313root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_cuda_compiler_versionNonepython3.13.____cp313root_base6.36.10.yaml --target-platform win-64"
+description = "Debug stir-feedstock with variant win_64_cuda_compiler_versionNonepython3.13.____cp313root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_cuda_compiler_versionNonepython3.13.____cp313root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_cuda_compiler_versionNonepython3.13.____cp313root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant win_64_cuda_compiler_versionNonepython3.13.____cp313root_base6.36.10"
+[feature.build.tasks."build-win_64_cuda_compiler_versionNonepython3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_cuda_compiler_versionNonepython3.14.____cp314root_base6.36.10.yaml --target-platform win-64"
+description = "Build stir-feedstock with variant win_64_cuda_compiler_versionNonepython3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_cuda_compiler_versionNonepython3.14.____cp314root_base6.36.10"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_cuda_compiler_versionNonepython3.14.____cp314root_base6.36.10.yaml --target-platform win-64"
+description = "Debug stir-feedstock with variant win_64_cuda_compiler_versionNonepython3.14.____cp314root_base6.36.10 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_cuda_compiler_versionNonepython3.14.____cp314root_base6.36.10"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_cuda_compiler_versionNonepython3.14.____cp314root_base6.36.10.yaml"
+description = "List contents of stir-feedstock packages built for variant win_64_cuda_compiler_versionNonepython3.14.____cp314root_base6.36.10"
 
 [environments]
 build = ["build"]
