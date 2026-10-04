@@ -5,13 +5,12 @@ context:
   version: "6.5.0"
   # 25Sep2026
   rev: "3da6880a5b87bb3de8043ccc039848cb1061adb2"
-  build_number: 0
+  build_number: 1
   # need to increment dev number here when changing rev
   dev_string: "dev1"
 
-  cuda_version: ${{ env.get("CONDA_OVERRIDE_CUDA", default="None") }}
-  with_cuda: ${{ "true" if cuda_version != "None" else "" }}
-  cuda_major: ${{ (cuda_version | split(".") | first) if with_cuda else "0" }}
+  with_cuda: ${{ cuda_compiler_version is defined and cuda_compiler_version != "None" }}
+  cuda_major: ${{ (cuda_compiler_version | split(".") | first) if with_cuda else "0" }}
   cuda_build_prefix: ${{ "cuda" ~ (cuda_compiler_version | version_to_buildstring) if with_cuda else "cpu" }}
 
 package:
@@ -33,8 +32,6 @@ build:
     down_prioritize_variant: ${{ 0 if with_cuda else 1 }}
   script:
     file: build
-    env:
-      cuda_compiler_version: ${{ cuda_version }}
 requirements:
   ignore_run_exports:
     by_name:
@@ -63,7 +60,7 @@ requirements:
     - nlohmann_json
     - if: with_cuda
       then:
-        - cuda-version ==${{ cuda_version }}
+        - cuda-version ==${{ cuda_compiler_version }}
         - if: (cuda_major | int) >= 12
           then:
             - if: linux
@@ -78,7 +75,7 @@ requirements:
     - if: with_cuda
       then:
         - __cuda
-        - cuda-version ==${{ cuda_version }}
+        - cuda-version ==${{ cuda_compiler_version }}
     # Needed for developers, see https://github.com/conda-forge/stir-feedstock/issues/120
     - libboost-headers
     - libitk-devel
