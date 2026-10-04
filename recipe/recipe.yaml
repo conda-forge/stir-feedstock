@@ -3,11 +3,11 @@ schema_version: 1
 context:
   name: STIR
   version: "6.5.0"
-  # 25Sep2026
-  rev: "3da6880a5b87bb3de8043ccc039848cb1061adb2"
-  build_number: 1
+  # 4Oct2026
+  rev: "c9de3fa3101a1046cf6773b71a1619ccb4051154"
+  build_number: 0
   # need to increment dev number here when changing rev
-  dev_string: "dev1"
+  dev_string: "dev2"
 
   with_cuda: ${{ cuda_compiler_version is defined and cuda_compiler_version != "None" }}
   cuda_major: ${{ (cuda_compiler_version | split(".") | first) if with_cuda else "0" }}
