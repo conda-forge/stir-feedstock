@@ -8,8 +8,8 @@ jobs:
     vmImage: $(VMIMAGE)
   strategy:
     matrix:
-      osx_64_python3.11.____cpythonroot_base6.36.10:
-        CONFIG: osx_64_python3.11.____cpythonroot_base6.36.10
+      osx_64_python3.11.____cpythonroot_base6.36.14:
+        CONFIG: osx_64_python3.11.____cpythonroot_base6.36.14
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -18,8 +18,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.11.____cpythonroot_base6.38.4:
-        CONFIG: osx_64_python3.11.____cpythonroot_base6.38.4
+      osx_64_python3.11.____cpythonroot_base6.38.6:
+        CONFIG: osx_64_python3.11.____cpythonroot_base6.38.6
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -28,8 +28,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.11.____cpythonroot_base6.40.2:
-        CONFIG: osx_64_python3.11.____cpythonroot_base6.40.2
+      osx_64_python3.11.____cpythonroot_base6.40.4:
+        CONFIG: osx_64_python3.11.____cpythonroot_base6.40.4
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -38,8 +38,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.12.____cpythonroot_base6.36.10:
-        CONFIG: osx_64_python3.12.____cpythonroot_base6.36.10
+      osx_64_python3.12.____cpythonroot_base6.36.14:
+        CONFIG: osx_64_python3.12.____cpythonroot_base6.36.14
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -48,8 +48,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.12.____cpythonroot_base6.38.4:
-        CONFIG: osx_64_python3.12.____cpythonroot_base6.38.4
+      osx_64_python3.12.____cpythonroot_base6.38.6:
+        CONFIG: osx_64_python3.12.____cpythonroot_base6.38.6
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -58,8 +58,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.12.____cpythonroot_base6.40.2:
-        CONFIG: osx_64_python3.12.____cpythonroot_base6.40.2
+      osx_64_python3.12.____cpythonroot_base6.40.4:
+        CONFIG: osx_64_python3.12.____cpythonroot_base6.40.4
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -68,8 +68,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.13.____cp313root_base6.36.10:
-        CONFIG: osx_64_python3.13.____cp313root_base6.36.10
+      osx_64_python3.13.____cp313root_base6.36.14:
+        CONFIG: osx_64_python3.13.____cp313root_base6.36.14
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -78,8 +78,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.13.____cp313root_base6.38.4:
-        CONFIG: osx_64_python3.13.____cp313root_base6.38.4
+      osx_64_python3.13.____cp313root_base6.38.6:
+        CONFIG: osx_64_python3.13.____cp313root_base6.38.6
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -88,8 +88,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.13.____cp313root_base6.40.2:
-        CONFIG: osx_64_python3.13.____cp313root_base6.40.2
+      osx_64_python3.13.____cp313root_base6.40.4:
+        CONFIG: osx_64_python3.13.____cp313root_base6.40.4
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -98,8 +98,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.14.____cp314root_base6.36.10:
-        CONFIG: osx_64_python3.14.____cp314root_base6.36.10
+      osx_64_python3.14.____cp314root_base6.36.14:
+        CONFIG: osx_64_python3.14.____cp314root_base6.36.14
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -108,8 +108,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.14.____cp314root_base6.38.4:
-        CONFIG: osx_64_python3.14.____cp314root_base6.38.4
+      osx_64_python3.14.____cp314root_base6.38.6:
+        CONFIG: osx_64_python3.14.____cp314root_base6.38.6
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -118,8 +118,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.14.____cp314root_base6.40.2:
-        CONFIG: osx_64_python3.14.____cp314root_base6.40.2
+      osx_64_python3.14.____cp314root_base6.40.4:
+        CONFIG: osx_64_python3.14.____cp314root_base6.40.4
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -128,8 +128,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.11.____cpythonroot_base6.36.10:
-        CONFIG: osx_arm64_python3.11.____cpythonroot_base6.36.10
+      osx_arm64_python3.11.____cpythonroot_base6.36.14:
+        CONFIG: osx_arm64_python3.11.____cpythonroot_base6.36.14
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -138,8 +138,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.11.____cpythonroot_base6.38.4:
-        CONFIG: osx_arm64_python3.11.____cpythonroot_base6.38.4
+      osx_arm64_python3.11.____cpythonroot_base6.38.6:
+        CONFIG: osx_arm64_python3.11.____cpythonroot_base6.38.6
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -148,8 +148,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.11.____cpythonroot_base6.40.2:
-        CONFIG: osx_arm64_python3.11.____cpythonroot_base6.40.2
+      osx_arm64_python3.11.____cpythonroot_base6.40.4:
+        CONFIG: osx_arm64_python3.11.____cpythonroot_base6.40.4
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -158,8 +158,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.12.____cpythonroot_base6.36.10:
-        CONFIG: osx_arm64_python3.12.____cpythonroot_base6.36.10
+      osx_arm64_python3.12.____cpythonroot_base6.36.14:
+        CONFIG: osx_arm64_python3.12.____cpythonroot_base6.36.14
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -168,8 +168,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.12.____cpythonroot_base6.38.4:
-        CONFIG: osx_arm64_python3.12.____cpythonroot_base6.38.4
+      osx_arm64_python3.12.____cpythonroot_base6.38.6:
+        CONFIG: osx_arm64_python3.12.____cpythonroot_base6.38.6
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -178,8 +178,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.12.____cpythonroot_base6.40.2:
-        CONFIG: osx_arm64_python3.12.____cpythonroot_base6.40.2
+      osx_arm64_python3.12.____cpythonroot_base6.40.4:
+        CONFIG: osx_arm64_python3.12.____cpythonroot_base6.40.4
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -188,8 +188,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.13.____cp313root_base6.36.10:
-        CONFIG: osx_arm64_python3.13.____cp313root_base6.36.10
+      osx_arm64_python3.13.____cp313root_base6.36.14:
+        CONFIG: osx_arm64_python3.13.____cp313root_base6.36.14
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -198,8 +198,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.13.____cp313root_base6.38.4:
-        CONFIG: osx_arm64_python3.13.____cp313root_base6.38.4
+      osx_arm64_python3.13.____cp313root_base6.38.6:
+        CONFIG: osx_arm64_python3.13.____cp313root_base6.38.6
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -208,8 +208,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.13.____cp313root_base6.40.2:
-        CONFIG: osx_arm64_python3.13.____cp313root_base6.40.2
+      osx_arm64_python3.13.____cp313root_base6.40.4:
+        CONFIG: osx_arm64_python3.13.____cp313root_base6.40.4
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -218,8 +218,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.14.____cp314root_base6.36.10:
-        CONFIG: osx_arm64_python3.14.____cp314root_base6.36.10
+      osx_arm64_python3.14.____cp314root_base6.36.14:
+        CONFIG: osx_arm64_python3.14.____cp314root_base6.36.14
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -228,8 +228,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.14.____cp314root_base6.38.4:
-        CONFIG: osx_arm64_python3.14.____cp314root_base6.38.4
+      osx_arm64_python3.14.____cp314root_base6.38.6:
+        CONFIG: osx_arm64_python3.14.____cp314root_base6.38.6
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -238,8 +238,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.14.____cp314root_base6.40.2:
-        CONFIG: osx_arm64_python3.14.____cp314root_base6.40.2
+      osx_arm64_python3.14.____cp314root_base6.40.4:
+        CONFIG: osx_arm64_python3.14.____cp314root_base6.40.4
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
