@@ -3,11 +3,11 @@ schema_version: 1
 context:
   name: STIR
   version: "6.5.0"
-  # 4Oct2026
-  rev: "c9de3fa3101a1046cf6773b71a1619ccb4051154"
-  build_number: 1
+  # 1Nov2026
+  rev: "b32b5de0deddc18651642c862b376b53bf9023a7"
+  build_number: 0
   # need to increment dev number here when changing rev
-  dev_string: "dev2"
+  dev_string: "dev3"
 
   with_cuda: ${{ cuda_compiler_version is defined and cuda_compiler_version != "None" }}
   cuda_major: ${{ (cuda_compiler_version | split(".") | first) if with_cuda else "0" }}
@@ -70,6 +70,8 @@ requirements:
     - if: not win
       then: root_base
       else: zlib
+    - if: not win and not (linux and aarch64)
+      then: libpetsird >=0.12.2
   run:
     - python
     - if: with_cuda
@@ -80,6 +82,7 @@ requirements:
     - libboost-headers
     - libitk-devel
     - libparallelproj
+    - libpetsird
 
 tests:
   - script:
