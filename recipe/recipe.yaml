@@ -5,7 +5,7 @@ context:
   version: "6.5.0"
   # 4Oct2026
   rev: "c9de3fa3101a1046cf6773b71a1619ccb4051154"
-  build_number: 0
+  build_number: 1
   # need to increment dev number here when changing rev
   dev_string: "dev2"
 
