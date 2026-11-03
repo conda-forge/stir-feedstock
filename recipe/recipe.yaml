@@ -53,6 +53,8 @@ requirements:
     - libboost-headers
     - if: not win and not (osx and arm64)
       then: hdf5
+    - if: not win and not (linux and aarch64)
+      then: libpetsird >=0.12.2
     - python
     - numpy
     - libitk-devel
@@ -70,8 +72,6 @@ requirements:
     - if: not win
       then: root_base
       else: zlib
-    - if: not win and not (linux and aarch64)
-      then: libpetsird >=0.12.2
   run:
     - python
     - if: with_cuda
@@ -82,7 +82,8 @@ requirements:
     - libboost-headers
     - libitk-devel
     - libparallelproj
-    - libpetsird
+    - if: not win and not (linux and aarch64)
+      then: libpetsird >=0.12.2
 
 tests:
   - script:
