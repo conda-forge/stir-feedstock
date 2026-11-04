@@ -53,7 +53,7 @@ requirements:
     - libboost-headers
     - if: not win and not (osx and arm64)
       then: hdf5
-    - if: not win and not (linux and aarch64)
+    - if: not win and not (linux and aarch64) and not (osx and not arm64)
       then: libpetsird >=0.12.2
     - python
     - numpy
@@ -82,7 +82,7 @@ requirements:
     - libboost-headers
     - libitk-devel
     - libparallelproj
-    - if: not win and not (linux and aarch64)
+    - if: not win and not (linux and aarch64) and not (osx and not arm64)
       then: libpetsird >=0.12.2
 
 tests:
