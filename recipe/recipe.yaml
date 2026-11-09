@@ -3,11 +3,11 @@ schema_version: 1
 context:
   name: STIR
   version: "6.5.0"
-  # 1Nov2026
-  rev: "b32b5de0deddc18651642c862b376b53bf9023a7"
+  # 8Nov2026
+  rev: "6edc7ab64a381e06feec15e6bde5f27238bba3e7"
   build_number: 0
   # need to increment dev number here when changing rev
-  dev_string: "dev3"
+  dev_string: "dev4"
 
   with_cuda: ${{ cuda_compiler_version is defined and cuda_compiler_version != "None" }}
   cuda_major: ${{ (cuda_compiler_version | split(".") | first) if with_cuda else "0" }}
@@ -54,7 +54,7 @@ requirements:
     - if: not win and not (osx and arm64)
       then: hdf5
     - if: not win and not (linux and aarch64) and not (osx and not arm64)
-      then: libpetsird >=0.12.2
+      then: libpetsird ==0.12.2
     - python
     - numpy
     - libitk-devel
