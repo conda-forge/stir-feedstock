@@ -3,8 +3,8 @@ schema_version: 1
 context:
   name: STIR
   version: "6.5.0"
-  # 6.5.0
-  rev: "243aa8ea1ca3986e675a043cd8d15a3218bf23bc"
+  # 6.5.0 + one commit for fixing test_listmode.py
+  rev: "7ea5c91d627a96cfb74335e59bed7e5894596aac"
   build_number: 0
   dev_string: ""
   # lines below for dev build
