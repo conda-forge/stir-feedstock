@@ -2,26 +2,31 @@ schema_version: 1
 
 context:
   name: STIR
-  version: "6.4.0"
-  build_number: 3
+  version: "6.5.0"
+  # 6.5.0 + one commit for fixing test_listmode.py
+  rev: "7ea5c91d627a96cfb74335e59bed7e5894596aac"
+  build_number: 0
+  dev_string: ""
+  # lines below for dev build
+  # need to increment dev number here when changing rev
+  # dev_string: "dev0"
+
   with_cuda: ${{ cuda_compiler_version is defined and cuda_compiler_version != "None" }}
   cuda_major: ${{ (cuda_compiler_version | split(".") | first) if with_cuda else "0" }}
   cuda_build_prefix: ${{ "cuda" ~ (cuda_compiler_version | version_to_buildstring) if with_cuda else "cpu" }}
 
 package:
   name: ${{ name | lower }}
-  version: ${{ version }}
+  version: ${{ version }}${{ dev_string }}
 
 source:
   git: https://github.com/UCL/STIR.git
-  tag: rel_${{ version }}
+  rev: ${{ rev }}
+  # tag: rel_${{ version }}
+  depth: 200
 
 build:
   number: ${{ build_number + 200 if with_cuda else build_number }}
-  # Don't support ROOT 6.38.00 as it caused segfaults in
-  # https://github.com/conda-forge/stir-feedstock/pull/153
-  skip:
-    - match(root_base, ">=6.38")
   string: ${{ cuda_build_prefix }}_h${{ hash }}_${{ build_number + 200 if with_cuda else build_number }}
   variant:
     use_keys:
@@ -45,12 +50,13 @@ requirements:
       then: libgomp
     - cmake
     - ninja
-    # current releases of STIR don't support SWIG 4.5 yet. TODO update once moving to STIR 6.5
-    - swig >=4.2,<4.5
+    - swig >=4.2
   host:
     - libboost-headers
     - if: not win and not (osx and arm64)
       then: hdf5
+    - if: not win and not (linux and aarch64) and not (osx and not arm64)
+      then: libpetsird ==0.12.2
     - python
     - numpy
     - libitk-devel
@@ -78,6 +84,8 @@ requirements:
     - libboost-headers
     - libitk-devel
     - libparallelproj
+    - if: not win and not (linux and aarch64) and not (osx and not arm64)
+      then: libpetsird ==0.12.2
 
 tests:
   - script:
