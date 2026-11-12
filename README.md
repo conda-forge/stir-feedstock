@@ -315,10 +315,10 @@ Current release info
 Installing stir
 ===============
 
-Installing `stir` from the `conda-forge/label/stir_dev` channel can be achieved by adding `conda-forge/label/stir_dev` to your channels with:
+Installing `stir` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
-conda config --add channels conda-forge/label/stir_dev
+conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
@@ -364,7 +364,7 @@ It is possible to list all of the versions of `stir` available on your platform:
 <summary>With conda</summary>
 
 ```
-conda search stir --channel conda-forge/label/stir_dev
+conda search stir --channel conda-forge
 ```
 
 </details>
@@ -373,7 +373,7 @@ conda search stir --channel conda-forge/label/stir_dev
 <summary>With mamba</summary>
 
 ```
-mamba search stir --channel conda-forge/label/stir_dev
+mamba search stir --channel conda-forge
 ```
 
 </details>
@@ -382,7 +382,7 @@ mamba search stir --channel conda-forge/label/stir_dev
 <summary>With pixi</summary>
 
 ```
-pixi search stir --channel conda-forge/label/stir_dev
+pixi search stir --channel conda-forge
 ```
 
 </details>
@@ -392,13 +392,13 @@ pixi search stir --channel conda-forge/label/stir_dev
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search stir --channel conda-forge/label/stir_dev
+mamba repoquery search stir --channel conda-forge
 
 # List packages depending on `stir`:
-mamba repoquery whoneeds stir --channel conda-forge/label/stir_dev
+mamba repoquery whoneeds stir --channel conda-forge
 
 # List dependencies of `stir`:
-mamba repoquery depends stir --channel conda-forge/label/stir_dev
+mamba repoquery depends stir --channel conda-forge
 ```
 
 </details>
