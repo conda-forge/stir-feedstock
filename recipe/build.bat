@@ -38,14 +38,10 @@ if defined CTEST_EXCLUDES (
 )
 if errorlevel 1 exit 1
 
-setlocal EnableDelayedExpansion
-
-:: Copy the [de]activate scripts to %PREFIX%\etc\conda\[de]activate.d.
-:: This will allow them to be run on environment activation.
-for %%F in (activate deactivate) DO (
-    if not exist %PREFIX%\etc\conda\%%F.d mkdir %PREFIX%\etc\conda\%%F.d
-    copy %RECIPE_DIR%\%%F.bat %PREFIX%\etc\conda\%%F.d\%PKG_NAME%_%%F.bat
-    copy %RECIPE_DIR%\%%F.ps1 %PREFIX%\etc\conda\%%F.d\%PKG_NAME%_%%F.ps1
-    :: Copy unix shell activation scripts, needed by Windows Bash users
-    copy %RECIPE_DIR%\%%F.sh %PREFIX%\etc\conda\%%F.d\%PKG_NAME%_%%F.sh
-)
+:: Point STIR to its installed config and doc dirs via conda's env_vars.d.
+:: The directory names use the major.minor version, as in STIR's CMakeLists.txt.
+for /f "tokens=1,2 delims=." %%a in ("%PKG_VERSION%") do set "STIR_VERSION_MM=STIR-%%a.%%b"
+if not exist "%LIBRARY_PREFIX%\share\%STIR_VERSION_MM%\config" exit 1
+if not exist "%PREFIX%\etc\conda\env_vars.d" mkdir "%PREFIX%\etc\conda\env_vars.d"
+echo {"STIR_CONFIG_DIR": "%PREFIX:\=/%/Library/share/%STIR_VERSION_MM%/config", "STIR_DOC_DIR": "%PREFIX:\=/%/Library/share/doc/%STIR_VERSION_MM%"}> "%PREFIX%\etc\conda\env_vars.d\%PKG_NAME%.json"
+if errorlevel 1 exit 1

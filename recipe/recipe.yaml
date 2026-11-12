@@ -5,7 +5,7 @@ context:
   version: "6.5.0"
   # 6.5.0 + one commit for fixing test_listmode.py
   rev: "7ea5c91d627a96cfb74335e59bed7e5894596aac"
-  build_number: 0
+  build_number: 1
   dev_string: ""
   # lines below for dev build
   # need to increment dev number here when changing rev
@@ -90,6 +90,7 @@ requirements:
 tests:
   - script:
       - stir_config --config-dir
+      - python -c "import os; assert os.path.isdir(os.environ['STIR_CONFIG_DIR']) and os.path.isdir(os.environ['STIR_DOC_DIR'])"
       - cd recon_test_pack
       - if: not win
         then:
