@@ -44,12 +44,15 @@ if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR}
   ctest -C Release -E "(${CTEST_EXCLUDES})" --output-on-failure
 fi
 
-# Copy the [de]activate scripts to $PREFIX/etc/conda/[de]activate.d.
-# This will allow them to be run on environment activation.
-for CHANGE in activate deactivate
-do
-    mkdir -p "${PREFIX}/etc/conda/${CHANGE}.d"
-    for e in sh fish csh; do
-        cp "${RECIPE_DIR}/${CHANGE}.$e" "${PREFIX}/etc/conda/${CHANGE}.d/${PKG_NAME}_${CHANGE}.$e"
-    done
-done
+# Point STIR to its installed config and doc dirs via conda's env_vars.d.
+# The directory names use the major.minor version, as in STIR's CMakeLists.txt.
+IFS=. read -r STIR_MAJOR STIR_MINOR _ <<< "${PKG_VERSION}"
+STIR_VERSION_MM="STIR-${STIR_MAJOR}.${STIR_MINOR}"
+test -d "${PREFIX}/share/${STIR_VERSION_MM}/config" || exit 1
+mkdir -p "${PREFIX}/etc/conda/env_vars.d"
+cat > "${PREFIX}/etc/conda/env_vars.d/${PKG_NAME}.json" << EOF
+{
+  "STIR_CONFIG_DIR": "${PREFIX}/share/${STIR_VERSION_MM}/config",
+  "STIR_DOC_DIR": "${PREFIX}/share/doc/${STIR_VERSION_MM}"
+}
+EOF
